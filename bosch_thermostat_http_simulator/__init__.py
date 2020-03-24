@@ -1,0 +1,1 @@
+name = "bosch_thermostat_http_simulator"

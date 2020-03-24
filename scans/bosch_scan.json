@@ -1,0 +1,2133 @@
+[
+    [
+        {
+            "id": "/dhwCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/actualTemp",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/setTemperature",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/setTemperature"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/operationMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/operationMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/activeDhwTimeProgram",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/activeDhwTimeProgram"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/currentSetpoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/currentSetpoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/dhwTimePrograms",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwTimePrograms"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/dhwSpLevels",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/extraDhw",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extraDhw"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/actualTemp",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 46.2,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/setTemperature",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 49.0,
+            "unitOfMeasure": "C",
+            "minValue": 31.0,
+            "maxValue": 51.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Automatic",
+            "allowedValues": [
+                "Automatic",
+                "Always_On",
+                "Always_Off"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/activeDhwTimeProgram",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Program1",
+            "allowedValues": [
+                "AlwaysHotWater",
+                "Program1",
+                "Program2"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/currentSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 49.0,
+            "unitOfMeasure": "C",
+            "minValue": 31.0,
+            "maxValue": 51.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwTimePrograms",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/dhwTimePrograms/AlwaysHotWater",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwTimePrograms/AlwaysHotWater"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/dhwTimePrograms/Program1",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwTimePrograms/Program1"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/dhwTimePrograms/Program2",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwTimePrograms/Program2"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwTimePrograms/AlwaysHotWater",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/dhwCircuits/dhw1/dhwSpLevels",
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "off",
+                    "time": 1440
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwTimePrograms/Program1",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/dhwCircuits/dhw1/dhwSpLevels",
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "on",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "on",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "on",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "on",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "on",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "on",
+                    "time": 450
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "on",
+                    "time": 450
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "off",
+                    "time": 1410
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwTimePrograms/Program2",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/dhwCircuits/dhw1/dhwSpLevels",
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "off",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "on",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "off",
+                    "time": 1440
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwSpLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/dhwSpLevels/on",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels/on"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/dhwSpLevels/off",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/dhwSpLevels/off"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwSpLevels/on",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 1,
+            "unitOfMeasure": "bool"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/dhwSpLevels/off",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0,
+            "unitOfMeasure": "bool"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/extraDhw",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/extraDhw/stopTemp",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extraDhw/stopTemp"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/extraDhw/time",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extraDhw/time"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/extraDhw/activationStatus",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extraDhw/activationStatus"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/extraDhw/status",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extraDhw/status"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/extraDhw/stopTemp",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 65,
+            "unitOfMeasure": "C",
+            "minValue": 50.0,
+            "maxValue": 65.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/extraDhw/time",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0,
+            "unitOfMeasure": "hour",
+            "minValue": 0.0,
+            "maxValue": 48.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/extraDhw/activationStatus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "ON",
+                "OFF"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/extraDhw/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ON",
+            "allowedValues": [
+                "OFF",
+                "ON"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/gateway",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/uuid",
+                    "uri": "http://THERMOSTAT/gateway/uuid"
+                },
+                {
+                    "id": "/gateway/firmware",
+                    "uri": "http://THERMOSTAT/gateway/firmware"
+                },
+                {
+                    "id": "/gateway/userpassword",
+                    "uri": "http://THERMOSTAT/gateway/userpassword"
+                },
+                {
+                    "id": "/gateway/versionFirmware",
+                    "uri": "http://THERMOSTAT/gateway/versionFirmware"
+                },
+                {
+                    "id": "/gateway/versionHardware",
+                    "uri": "http://THERMOSTAT/gateway/versionHardware"
+                },
+                {
+                    "id": "/gateway/language",
+                    "uri": "http://THERMOSTAT/gateway/language"
+                },
+                {
+                    "id": "/gateway/DateTime",
+                    "uri": "http://THERMOSTAT/gateway/DateTime"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/uuid",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": -1,
+            "allowedValues": -1
+        },
+        {
+            "id": "/gateway/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "01.06.02"
+        },
+        {
+            "id": "/gateway/versionHardware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "iCom_low_CAN_v1"
+        },
+        {
+            "id": "/gateway/language",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "en"
+        },
+        {
+            "id": "/gateway/DateTime",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2019-10-29T10:31:26"
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1"
+                },
+                {
+                    "id": "/heatingCircuits/hc2",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/operationMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/operationMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/activeSwitchProgram",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/activeSwitchProgram"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatingCurveSetting",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatingCurveSetting"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/status",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/status"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "automatic",
+            "allowedValues": [
+                "automatic",
+                "normal",
+                "exception",
+                "heating_off"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/activeSwitchProgram",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "HP_OPTIMIZED",
+            "allowedValues": [
+                "HP_OPTIMIZED",
+                "Program1",
+                "Program2",
+                "Family",
+                "Morning",
+                "Evening",
+                "Seniors"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Program1",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Program1"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Program2",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Program2"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Family",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Family"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Morning",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Morning"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Evening",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Evening"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/Seniors",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/Seniors"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Program1",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Program2",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Family",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Morning",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Evening",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1380
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/Seniors",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels/exception",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels/exception"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels/normal",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels/normal"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/exception",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 17,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 30.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/normal",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 22,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 35.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatingCurveSetting",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/heatingCurveSetting/percentage",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatingCurveSetting/percentage"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatingCurveSetting/increment",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatingCurveSetting/increment"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatingCurveSetting/decrement",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatingCurveSetting/decrement"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatingCurveSetting/percentage",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 45.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatingCurveSetting/increment",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1.0,
+            "unitOfMeasure": " ",
+            "minValue": 1.0,
+            "maxValue": 2.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatingCurveSetting/decrement",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1.0,
+            "unitOfMeasure": " ",
+            "minValue": 1.0,
+            "maxValue": 2.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode/activated"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode/startStop",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode/startStop"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode/activated",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "ON",
+                "OFF"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2018-03-27/2018-04-01"
+        },
+        {
+            "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 31.8,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/heatingCircuits/hc1/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ACTIVE",
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE",
+                "NOT_PRESENT"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc2/operationMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/operationMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/activeSwitchProgram",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/activeSwitchProgram"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/temperatureLevels",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/heatingCurveSetting",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/heatingCurveSetting"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/holidayMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/holidayMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/status",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/status"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "automatic",
+            "allowedValues": [
+                "automatic",
+                "normal",
+                "exception",
+                "heating_off"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/activeSwitchProgram",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "HP_OPTIMIZED",
+            "allowedValues": [
+                "HP_OPTIMIZED",
+                "Program1",
+                "Program2",
+                "Family",
+                "Morning",
+                "Evening",
+                "Seniors"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Program1",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Program1"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Program2",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Program2"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Family",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Family"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Morning",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Morning"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Evening",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Evening"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/switchPrograms/Seniors",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/switchPrograms/Seniors"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Program1",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1440
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Program2",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1440
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 0
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1440
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Family",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Morning",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 270
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Evening",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1410
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1380
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/switchPrograms/Seniors",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc2/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "switchPointTimeRaster": 30,
+            "writeable": 0,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "exception",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "normal",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "exception",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/temperatureLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc2/temperatureLevels/exception",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels/exception"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/temperatureLevels/normal",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/temperatureLevels/normal"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/temperatureLevels/exception",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 17,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 30.0
+        },
+        {
+            "id": "/heatingCircuits/hc2/temperatureLevels/normal",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 10,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 35.0
+        },
+        {
+            "id": "/heatingCircuits/hc2/heatingCurveSetting",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc2/heatingCurveSetting/percentage",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/heatingCurveSetting/percentage"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/heatingCurveSetting/increment",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/heatingCurveSetting/increment"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/heatingCurveSetting/decrement",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/heatingCurveSetting/decrement"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/heatingCurveSetting/percentage",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 35,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0
+        },
+        {
+            "id": "/heatingCircuits/hc2/heatingCurveSetting/increment",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1,
+            "unitOfMeasure": " ",
+            "minValue": 1.0,
+            "maxValue": 2.0
+        },
+        {
+            "id": "/heatingCircuits/hc2/heatingCurveSetting/decrement",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1,
+            "unitOfMeasure": " ",
+            "minValue": 1.0,
+            "maxValue": 2.0
+        },
+        {
+            "id": "/heatingCircuits/hc2/holidayMode",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc2/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/holidayMode/activated"
+                },
+                {
+                    "id": "/heatingCircuits/hc2/holidayMode/startStop",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc2/holidayMode/startStop"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/holidayMode/activated",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "ON",
+                "OFF"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc2/holidayMode/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2000-00-00/2000-00-00"
+        },
+        {
+            "id": "/heatingCircuits/hc2/supplyTemperatureSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 27.3,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/heatingCircuits/hc2/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ACTIVE",
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE",
+                "NOT_PRESENT"
+            ]
+        }
+    ],
+    [],
+    [],
+    [
+        {
+            "id": "/system",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/brand",
+                    "uri": "http://THERMOSTAT/system/brand"
+                },
+                {
+                    "id": "/system/bus",
+                    "uri": "http://THERMOSTAT/system/bus"
+                },
+                {
+                    "id": "/system/systemType",
+                    "uri": "http://THERMOSTAT/system/systemType"
+                },
+                {
+                    "id": "/system/sensors",
+                    "uri": "http://THERMOSTAT/system/sensors"
+                },
+                {
+                    "id": "/system/appliance",
+                    "uri": "http://THERMOSTAT/system/appliance"
+                }
+            ]
+        },
+        {
+            "id": "/system/brand",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "Buderus",
+            "allowedValues": [
+                "Junkers",
+                "Worcester",
+                "Bosch",
+                "Buderus",
+                "Nefit",
+                "Geminox",
+                "IVT",
+                "Sieger",
+                "Carrier"
+            ]
+        },
+        {
+            "id": "/system/bus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "CAN"
+        },
+        {
+            "id": "/system/systemType",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "CanIcomGw"
+        },
+        {
+            "id": "/system/sensors",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/outdoorTemperatures",
+                    "uri": "http://THERMOSTAT/system/sensors/outdoorTemperatures"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/outdoorTemperatures",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/outdoorTemperatures/t1",
+                    "uri": "http://THERMOSTAT/system/sensors/outdoorTemperatures/t1"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/outdoorTemperatures/t1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 6.0,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/system/appliance",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/appliance/type",
+                    "uri": "http://THERMOSTAT/system/appliance/type"
+                }
+            ]
+        },
+        {
+            "id": "/system/appliance/type",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "Heatpump"
+        }
+    ]
+]
