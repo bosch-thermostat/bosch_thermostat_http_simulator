@@ -18,7 +18,9 @@ _LOGGER = logging.getLogger(__name__)
 def cli(ctx, token: str, password: str, file: str):
     """A tool to run as Bosch thermostat simlator."""
     logging.basicConfig(level=logging.DEBUG)
-    _LOGGER.info("Running Bosch simulator")
+    _LOGGER.info("Running Bosch simulator with:")
+    _LOGGER.info("Token: %s", token)
+    _LOGGER.info("Password: %s", password)
     app = create_app(token, password, file)
     serve(app, host="0.0.0.0", port=8080)
 

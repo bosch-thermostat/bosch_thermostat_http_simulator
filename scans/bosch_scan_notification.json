@@ -1,0 +1,2468 @@
+[
+    [
+        {
+            "id": "/dhwCircuits",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/dhwCircuits/dhw1",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/operationMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/operationMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/switchPrograms",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/switchPrograms"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/currentSetpoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/currentSetpoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/actualTemp",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/waterFlow",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/waterFlow"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/workingTime",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/workingTime"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/charge",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/charge"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/chargeDuration",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/chargeDuration"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/tdMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/tdMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/tdsetPoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/tdsetPoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/cpStartph",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/cpStartph"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/singleChargeSetpoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/singleChargeSetpoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/extBlocked",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/extBlocked"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/highStop",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/highStop"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/holidayMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/holidayMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/status",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/status"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "Off",
+                "low",
+                "high",
+                "ownprogram",
+                "eco"
+            ],
+            "id": "/dhwCircuits/dhw1/operationMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "low",
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/switchPrograms",
+            "references": [],
+            "type": "refEnum"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/off",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/off"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/low",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/low"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/high",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/high"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/eco",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/eco"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/off",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/low",
+            "maxValue": 52.0,
+            "minValue": 40.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 42.0,
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/high",
+            "maxValue": 57.0,
+            "minValue": 40.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 54.0,
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/eco",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 35.0,
+            "writeable": 0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/currentSetpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 60.0,
+            "writeable": 0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/actualTemp",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 52.6,
+            "writeable": 0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/waterFlow",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "l/min",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/workingTime",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "mins",
+            "value": 0,
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "stop",
+                "start"
+            ],
+            "id": "/dhwCircuits/dhw1/charge",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "stop",
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/chargeDuration",
+            "maxValue": 2880.0,
+            "minValue": 15.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "mins",
+            "value": 60.0,
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/singleChargeSetpoint",
+            "maxValue": 70.0,
+            "minValue": 50.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 65.0,
+            "writeable": 1
+        },
+        {
+            "id": "/dhwCircuits/dhw1/holidayMode",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/holidayMode/activated"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "",
+                "hm1",
+                "hm2",
+                "hm3",
+                "hm4",
+                "hm5"
+            ],
+            "id": "/dhwCircuits/dhw1/holidayMode/activated",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "",
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE"
+            ],
+            "id": "/dhwCircuits/dhw1/status",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "ACTIVE",
+            "writeable": 0
+        }
+    ],
+    [
+        {
+            "id": "/gateway",
+            "references": [
+                {
+                    "id": "/gateway/uuid",
+                    "uri": "http://THERMOSTAT/gateway/uuid"
+                },
+                {
+                    "id": "/gateway/firmware",
+                    "uri": "http://THERMOSTAT/gateway/firmware"
+                },
+                {
+                    "id": "/gateway/userpassword",
+                    "uri": "http://THERMOSTAT/gateway/userpassword"
+                },
+                {
+                    "id": "/gateway/versionFirmware",
+                    "uri": "http://THERMOSTAT/gateway/versionFirmware"
+                },
+                {
+                    "id": "/gateway/versionHardware",
+                    "uri": "http://THERMOSTAT/gateway/versionHardware"
+                },
+                {
+                    "id": "/gateway/boschSHPassword",
+                    "uri": "http://THERMOSTAT/gateway/boschSHPassword"
+                },
+                {
+                    "id": "/gateway/portalPassword",
+                    "uri": "http://THERMOSTAT/gateway/portalPassword"
+                },
+                {
+                    "id": "/gateway/knxPassword",
+                    "uri": "http://THERMOSTAT/gateway/knxPassword"
+                },
+                {
+                    "id": "/gateway/haiPassword",
+                    "uri": "http://THERMOSTAT/gateway/haiPassword"
+                },
+                {
+                    "id": "/gateway/DateTime",
+                    "uri": "http://THERMOSTAT/gateway/DateTime"
+                },
+                {
+                    "id": "/gateway/instPassword",
+                    "uri": "http://THERMOSTAT/gateway/instPassword"
+                },
+                {
+                    "id": "/gateway/instAccess",
+                    "uri": "http://THERMOSTAT/gateway/instAccess"
+                },
+                {
+                    "id": "/gateway/instWriteAccess",
+                    "uri": "http://THERMOSTAT/gateway/instWriteAccess"
+                },
+                {
+                    "id": "/gateway/version",
+                    "uri": "http://THERMOSTAT/gateway/version"
+                },
+                {
+                    "id": "/gateway/update",
+                    "uri": "http://THERMOSTAT/gateway/update"
+                },
+                {
+                    "id": "/gateway/logging",
+                    "uri": "http://THERMOSTAT/gateway/logging"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "-1"
+            ],
+            "id": "/gateway/uuid",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "-1",
+            "writeable": 0
+        },
+        {},
+        {
+            "id": "/gateway/versionFirmware",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "04.06.07",
+            "writeable": 0
+        },
+        {
+            "id": "/gateway/versionHardware",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "iCom_Low_NSC_v1",
+            "writeable": 0
+        },
+        {
+            "id": "/gateway/DateTime",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2020-06-27T11:51:30",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "off",
+                "on"
+            ],
+            "id": "/gateway/instAccess",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "off",
+                "on"
+            ],
+            "id": "/gateway/instWriteAccess",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 1
+        },
+        {
+            "id": "/gateway/update",
+            "references": [
+                {
+                    "id": "/gateway/update/version",
+                    "uri": "http://THERMOSTAT/gateway/update/version"
+                },
+                {
+                    "id": "/gateway/update/request",
+                    "uri": "http://THERMOSTAT/gateway/update/request"
+                },
+                {
+                    "id": "/gateway/update/strategy",
+                    "uri": "http://THERMOSTAT/gateway/update/strategy"
+                },
+                {
+                    "id": "/gateway/update/status",
+                    "uri": "http://THERMOSTAT/gateway/update/status"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "inprogress",
+                "completed",
+                "interrupted"
+            ],
+            "id": "/gateway/update/status",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "completed",
+            "writeable": 0
+        },
+        {
+            "id": "/gateway/logging",
+            "references": [
+                {
+                    "id": "/gateway/logging/switch",
+                    "uri": "http://THERMOSTAT/gateway/logging/switch"
+                },
+                {
+                    "id": "/gateway/logging/reqBusVar",
+                    "uri": "http://THERMOSTAT/gateway/logging/reqBusVar"
+                },
+                {
+                    "id": "/gateway/logging/userAcceptance",
+                    "uri": "http://THERMOSTAT/gateway/logging/userAcceptance"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "false",
+                "true"
+            ],
+            "id": "/gateway/logging/userAcceptance",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "false",
+            "writeable": 1
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatingCircuits/hc1",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/currentRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/actualSupplyTemperature"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/operationMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/operationMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/manualRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/manualRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/roomtemperature",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/pumpModulation",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/pumpModulation"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/suWiThreshold",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/suWiThreshold"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/designTemp",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/designTemp"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/roomTempOffset",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomTempOffset"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatCurveMax",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatCurveMax"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/controlType",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/controlType"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/roomInfluence",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomInfluence"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/fastHeatupFactor",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/fastHeatupFactor"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/suWiSwitchMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/suWiSwitchMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/currentOpModeInfo",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentOpModeInfo"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/cooling",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/cooling"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/currentSuWiMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentSuWiMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/status",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/status"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatingCircuits/hc1/currentRoomSetpoint",
+            "recordable": 0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatingCircuits/hc1/actualSupplyTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 25.8,
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "auto",
+                "manual"
+            ],
+            "id": "/heatingCircuits/hc1/operationMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "manual",
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureRoomSetpoint",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+            "recordable": 0,
+            "state": [
+                {
+                    "off_heat": 0.0
+                },
+                {
+                    "off_cool": 90.0
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatingCircuits/hc1/manualRoomSetpoint",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/roomtemperature",
+            "recordable": 1,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": -3276.8,
+            "writeable": 0
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/A",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/A"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/B",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/B"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/A",
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "switchPointTimeRaster": 15,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "eco",
+                    "time": 1380
+                }
+            ],
+            "type": "switchProgram",
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/B",
+            "maxNbOfSwitchPoints": 14,
+            "maxNbOfSwitchPointsPerDay": 2,
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "switchPointTimeRaster": 15,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "eco",
+                    "time": 1380
+                }
+            ],
+            "type": "switchProgram",
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels",
+            "references": [],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatingCircuits/hc1/pumpModulation",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatingCircuits/hc1/fastHeatupFactor",
+            "maxValue": 100.0,
+            "minValue": 1.0,
+            "recordable": 0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "off",
+                "automatic",
+                "forced"
+            ],
+            "id": "/heatingCircuits/hc1/suWiSwitchMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "automatic",
+            "writeable": 1
+        },
+        {
+            "id": "/heatingCircuits/hc1/cooling",
+            "references": [],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "off",
+                "forced",
+                "cooling"
+            ],
+            "id": "/heatingCircuits/hc1/currentSuWiMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 0
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode/activated"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "",
+                "hm1",
+                "hm2",
+                "hm3",
+                "hm4",
+                "hm5"
+            ],
+            "id": "/heatingCircuits/hc1/holidayMode/activated",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "",
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE"
+            ],
+            "id": "/heatingCircuits/hc1/status",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "ACTIVE",
+            "writeable": 0
+        }
+    ],
+    [
+        {
+            "id": "/heatSources",
+            "references": [
+                {
+                    "id": "/heatSources/info",
+                    "uri": "http://THERMOSTAT/heatSources/info"
+                },
+                {
+                    "id": "/heatSources/actualModulation",
+                    "uri": "http://THERMOSTAT/heatSources/actualModulation"
+                },
+                {
+                    "id": "/heatSources/burnerModulationSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/burnerModulationSetpoint"
+                },
+                {
+                    "id": "/heatSources/flameStatus",
+                    "uri": "http://THERMOSTAT/heatSources/flameStatus"
+                },
+                {
+                    "id": "/heatSources/CHpumpModulation",
+                    "uri": "http://THERMOSTAT/heatSources/CHpumpModulation"
+                },
+                {
+                    "id": "/heatSources/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/actualSupplyTemperature"
+                },
+                {
+                    "id": "/heatSources/powerSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/powerSetpoint"
+                },
+                {
+                    "id": "/heatSources/systemPressure",
+                    "uri": "http://THERMOSTAT/heatSources/systemPressure"
+                },
+                {
+                    "id": "/heatSources/fanSpeed_setpoint",
+                    "uri": "http://THERMOSTAT/heatSources/fanSpeed_setpoint"
+                },
+                {
+                    "id": "/heatSources/ChimneySweeper",
+                    "uri": "http://THERMOSTAT/heatSources/ChimneySweeper"
+                },
+                {
+                    "id": "/heatSources/returnTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/returnTemperature"
+                },
+                {
+                    "id": "/heatSources/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/numberOfStarts"
+                },
+                {
+                    "id": "/heatSources/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatSources/applianceSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/applianceSupplyTemperature"
+                },
+                {
+                    "id": "/heatSources/nominalCHPower",
+                    "uri": "http://THERMOSTAT/heatSources/nominalCHPower"
+                },
+                {
+                    "id": "/heatSources/nominalDHWPower",
+                    "uri": "http://THERMOSTAT/heatSources/nominalDHWPower"
+                },
+                {
+                    "id": "/heatSources/smartGridMode",
+                    "uri": "http://THERMOSTAT/heatSources/smartGridMode"
+                },
+                {
+                    "id": "/heatSources/evuActive",
+                    "uri": "http://THERMOSTAT/heatSources/evuActive"
+                },
+                {
+                    "id": "/heatSources/elecSolarCollectorActive",
+                    "uri": "http://THERMOSTAT/heatSources/elecSolarCollectorActive"
+                },
+                {
+                    "id": "/heatSources/poolTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/poolTemperature"
+                },
+                {
+                    "id": "/heatSources/outdoorType",
+                    "uri": "http://THERMOSTAT/heatSources/outdoorType"
+                },
+                {
+                    "id": "/heatSources/indoorType",
+                    "uri": "http://THERMOSTAT/heatSources/indoorType"
+                },
+                {
+                    "id": "/heatSources/delayTimer",
+                    "uri": "http://THERMOSTAT/heatSources/delayTimer"
+                },
+                {
+                    "id": "/heatSources/heating",
+                    "uri": "http://THERMOSTAT/heatSources/heating"
+                },
+                {
+                    "id": "/heatSources/Source",
+                    "uri": "http://THERMOSTAT/heatSources/Source"
+                },
+                {
+                    "id": "/heatSources/sensors",
+                    "uri": "http://THERMOSTAT/heatSources/sensors"
+                },
+                {
+                    "id": "/heatSources/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime"
+                },
+                {
+                    "id": "/heatSources/fuelCell",
+                    "uri": "http://THERMOSTAT/heatSources/fuelCell"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring"
+                },
+                {
+                    "id": "/heatSources/hs1",
+                    "uri": "http://THERMOSTAT/heatSources/hs1"
+                },
+                {
+                    "id": "/heatSources/ch",
+                    "uri": "http://THERMOSTAT/heatSources/ch"
+                },
+                {
+                    "id": "/heatSources/dhw",
+                    "uri": "http://THERMOSTAT/heatSources/dhw"
+                },
+                {
+                    "id": "/heatSources/pool",
+                    "uri": "http://THERMOSTAT/heatSources/pool"
+                },
+                {
+                    "id": "/heatSources/total",
+                    "uri": "http://THERMOSTAT/heatSources/total"
+                },
+                {
+                    "id": "/heatSources/electricGrid",
+                    "uri": "http://THERMOSTAT/heatSources/electricGrid"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/info",
+            "recordable": 0,
+            "type": "systeminfo",
+            "values": [
+                {
+                    "Id": "20009",
+                    "No": "000000000000000000000000000000000000000000000000000000",
+                    "Tok": "8",
+                    "Ver": "72"
+                }
+            ],
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/actualModulation",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/burnerModulationSetpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "off",
+                "on"
+            ],
+            "id": "/heatSources/flameStatus",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/CHpumpModulation",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/actualSupplyTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 25.8,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/powerSetpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/systemPressure",
+            "recordable": 0,
+            "state": [
+                {
+                    "invalid": 25.5
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "bar",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/fanSpeed_setpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "rpm",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/ChimneySweeper",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/returnTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 53.5,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/numberOfStarts",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": " ",
+            "value": 847,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/supplyTemperatureSetpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/applianceSupplyTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 59.2,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/nominalCHPower",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kW",
+            "value": 24.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/nominalDHWPower",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kW",
+            "value": 24.0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/poolTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": -3276.8,
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "warm",
+                "compStart",
+                "integrator",
+                "addIntegrator",
+                "alarm",
+                "dhw",
+                "ch",
+                "mixer",
+                "hc1CoolStart",
+                "hc2CoolStart",
+                "hc3CoolStart",
+                "hc4CoolStart",
+                "hc1HeatStart",
+                "hc2HeatStart",
+                "hc3HeatStart",
+                "hc4HeatStart",
+                "hc1CoolStop",
+                "hc2CoolStop",
+                "hc3CoolStop",
+                "hc4CoolStop",
+                "hc1HeatStop",
+                "hc2HeatStop",
+                "hc3HeatStop",
+                "hc4HeatStop"
+            ],
+            "id": "/heatSources/delayTimer",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [
+                "dhw",
+                "ch"
+            ],
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/heating",
+            "references": [
+                {
+                    "id": "/heatSources/heating/extBlocked",
+                    "uri": "http://THERMOSTAT/heatSources/heating/extBlocked"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/Source",
+            "references": [
+                {
+                    "id": "/heatSources/Source/Compressor",
+                    "uri": "http://THERMOSTAT/heatSources/Source/Compressor"
+                },
+                {
+                    "id": "/heatSources/Source/eHeater",
+                    "uri": "http://THERMOSTAT/heatSources/Source/eHeater"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/Source/Compressor",
+            "references": [
+                {
+                    "id": "/heatSources/Source/Compressor/extBlocked",
+                    "uri": "http://THERMOSTAT/heatSources/Source/Compressor/extBlocked"
+                },
+                {
+                    "id": "/heatSources/Source/Compressor/power",
+                    "uri": "http://THERMOSTAT/heatSources/Source/Compressor/power"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/Source/eHeater",
+            "references": [
+                {
+                    "id": "/heatSources/Source/eHeater/extBlocked",
+                    "uri": "http://THERMOSTAT/heatSources/Source/eHeater/extBlocked"
+                },
+                {
+                    "id": "/heatSources/Source/eHeater/dhw",
+                    "uri": "http://THERMOSTAT/heatSources/Source/eHeater/dhw"
+                },
+                {
+                    "id": "/heatSources/Source/eHeater/status",
+                    "uri": "http://THERMOSTAT/heatSources/Source/eHeater/status"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/sensors",
+            "references": [
+                {
+                    "id": "/heatSources/sensors/evaporatorTemp",
+                    "uri": "http://THERMOSTAT/heatSources/sensors/evaporatorTemp"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/workingTime",
+            "references": [
+                {
+                    "id": "/heatSources/workingTime/totalSystem",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/totalSystem"
+                },
+                {
+                    "id": "/heatSources/workingTime/secondBurner",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/secondBurner"
+                },
+                {
+                    "id": "/heatSources/workingTime/centralHeating",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/centralHeating"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/workingTime/totalSystem",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "s",
+            "value": 16902928,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/workingTime/secondBurner",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "mins",
+            "value": 0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/workingTime/centralHeating",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "mins",
+            "value": 0,
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/fuelCell",
+            "references": [],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/energyMonitoring",
+            "references": [
+                {
+                    "id": "/heatSources/energyMonitoring/consumption",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/consumption"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/correctionFactor",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/correctionFactor"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/maxTankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/maxTankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/minTankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/minTankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/tankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/tankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/startDateTime",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/startDateTime"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/energyMonitoring/consumption",
+            "maxValue": 135780000.0,
+            "minValue": 0.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kWh",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatSources/energyMonitoring/correctionFactor",
+            "maxValue": 1.3,
+            "minValue": 0.7,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": " ",
+            "value": 1.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatSources/energyMonitoring/maxTankLevel",
+            "maxValue": 135780000.0,
+            "minValue": 0.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kWh",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatSources/energyMonitoring/minTankLevel",
+            "maxValue": 135780000.0,
+            "minValue": 0.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kWh",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatSources/energyMonitoring/tankLevel",
+            "maxValue": 135780000.0,
+            "minValue": 0.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "kWh",
+            "value": 0.0,
+            "writeable": 1
+        },
+        {
+            "id": "/heatSources/energyMonitoring/startDateTime",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2020-05-06T17:37:15",
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/hs1",
+            "references": [
+                {
+                    "id": "/heatSources/hs1/info",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/info"
+                },
+                {
+                    "id": "/heatSources/hs1/type",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/type"
+                },
+                {
+                    "id": "/heatSources/hs1/actualModulation",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/actualModulation"
+                },
+                {
+                    "id": "/heatSources/hs1/flameStatus",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/flameStatus"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/hs1/info",
+            "recordable": 0,
+            "type": "systeminfo",
+            "values": [
+                {
+                    "Id": "20009",
+                    "No": "000000000000000000000000000000000000000000000000000000",
+                    "Tok": "8",
+                    "Ver": "72"
+                }
+            ],
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "No_Appliance",
+                "OilBoiler",
+                "GasBoiler",
+                "Heatpump",
+                "unknownBoiler"
+            ],
+            "id": "/heatSources/hs1/type",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "Heatpump",
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/hs1/actualModulation",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "%",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "off",
+                "on"
+            ],
+            "id": "/heatSources/hs1/flameStatus",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "off",
+            "writeable": 0
+        },
+        {
+            "id": "/heatSources/ch",
+            "references": [
+                {
+                    "id": "/heatSources/ch/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/ch/energyMonitoring",
+            "references": [
+                {
+                    "id": "/heatSources/ch/energyMonitoring/outputProduced",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring/outputProduced"
+                },
+                {
+                    "id": "/heatSources/ch/energyMonitoring/eheater",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring/eheater"
+                },
+                {
+                    "id": "/heatSources/ch/energyMonitoring/compressor",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring/compressor"
+                },
+                {
+                    "id": "/heatSources/ch/energyMonitoring/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring/workingTime"
+                },
+                {
+                    "id": "/heatSources/ch/energyMonitoring/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring/numberOfStarts"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/dhw",
+            "references": [
+                {
+                    "id": "/heatSources/dhw/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/dhw/energyMonitoring",
+            "references": [
+                {
+                    "id": "/heatSources/dhw/energyMonitoring/outputProduced",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring/outputProduced"
+                },
+                {
+                    "id": "/heatSources/dhw/energyMonitoring/eheater",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring/eheater"
+                },
+                {
+                    "id": "/heatSources/dhw/energyMonitoring/compressor",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring/compressor"
+                },
+                {
+                    "id": "/heatSources/dhw/energyMonitoring/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring/workingTime"
+                },
+                {
+                    "id": "/heatSources/dhw/energyMonitoring/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring/numberOfStarts"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/pool",
+            "references": [
+                {
+                    "id": "/heatSources/pool/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/pool/energyMonitoring",
+            "references": [
+                {
+                    "id": "/heatSources/pool/energyMonitoring/outputProduced",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring/outputProduced"
+                },
+                {
+                    "id": "/heatSources/pool/energyMonitoring/eheater",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring/eheater"
+                },
+                {
+                    "id": "/heatSources/pool/energyMonitoring/compressor",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring/compressor"
+                },
+                {
+                    "id": "/heatSources/pool/energyMonitoring/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring/workingTime"
+                },
+                {
+                    "id": "/heatSources/pool/energyMonitoring/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring/numberOfStarts"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/total",
+            "references": [
+                {
+                    "id": "/heatSources/total/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/total/energyMonitoring",
+            "references": [
+                {
+                    "id": "/heatSources/total/energyMonitoring/consumedEnergy",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/consumedEnergy"
+                },
+                {
+                    "id": "/heatSources/total/energyMonitoring/outputProduced",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/outputProduced"
+                },
+                {
+                    "id": "/heatSources/total/energyMonitoring/eheater",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/eheater"
+                },
+                {
+                    "id": "/heatSources/total/energyMonitoring/compressor",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/compressor"
+                },
+                {
+                    "id": "/heatSources/total/energyMonitoring/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/workingTime"
+                },
+                {
+                    "id": "/heatSources/total/energyMonitoring/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring/numberOfStarts"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/heatSources/electricGrid",
+            "references": [],
+            "type": "refEnum"
+        }
+    ],
+    [
+        {
+            "id": "/notifications",
+            "recordable": 0,
+            "type": "errorList",
+            "values": [
+                {
+                    "act": "A",
+                    "cat": "-1",
+                    "ccd": 5596,
+                    "dcd": "H01",
+                    "dlv": "8",
+                    "fc": "19",
+                    "orig": "8",
+                    "t": "2020-06-21T21:02:22"
+                }
+            ],
+            "writeable": 0
+        }
+    ],
+    [
+        {
+            "id": "/system",
+            "references": [
+                {
+                    "id": "/system/brand",
+                    "uri": "http://THERMOSTAT/system/brand"
+                },
+                {
+                    "id": "/system/systemType",
+                    "uri": "http://THERMOSTAT/system/systemType"
+                },
+                {
+                    "id": "/system/bus",
+                    "uri": "http://THERMOSTAT/system/bus"
+                },
+                {
+                    "id": "/system/busReq",
+                    "uri": "http://THERMOSTAT/system/busReq"
+                },
+                {
+                    "id": "/system/info",
+                    "uri": "http://THERMOSTAT/system/info"
+                },
+                {
+                    "id": "/system/minOutdoorTemp",
+                    "uri": "http://THERMOSTAT/system/minOutdoorTemp"
+                },
+                {
+                    "id": "/system/healthStatus",
+                    "uri": "http://THERMOSTAT/system/healthStatus"
+                },
+                {
+                    "id": "/system/sensors",
+                    "uri": "http://THERMOSTAT/system/sensors"
+                },
+                {
+                    "id": "/system/appliance",
+                    "uri": "http://THERMOSTAT/system/appliance"
+                },
+                {
+                    "id": "/system/holidayModes",
+                    "uri": "http://THERMOSTAT/system/holidayModes"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "allowedValues": [
+                "unknown",
+                "Bosch",
+                "Junkers",
+                "Buderus",
+                "Nefit",
+                "Sieger",
+                "Tata",
+                "Dakon",
+                "Elm",
+                "Boulter",
+                "Vulcano",
+                "Worcester",
+                "British Gas",
+                "IVT",
+                "Geminox",
+                "Neckar",
+                "Zeus",
+                "Milton"
+            ],
+            "id": "/system/brand",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "Bosch",
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "NSC_ICOM_GATEWAY"
+            ],
+            "id": "/system/systemType",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "NSC_ICOM_GATEWAY",
+            "writeable": 0
+        },
+        {
+            "allowedValues": [
+                "No_Bus",
+                "EMS1_0",
+                "EMS2_0",
+                "CAN"
+            ],
+            "id": "/system/bus",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "EMS2_0",
+            "writeable": 0
+        },
+        {
+            "id": "/system/info",
+            "recordable": 0,
+            "type": "systeminfo",
+            "values": [
+                {
+                    "Id": "172",
+                    "No": "000000000000000000000000000000000000000000000000000000",
+                    "Tok": "8",
+                    "Ver": "02.00"
+                },
+                {
+                    "Id": "158",
+                    "No": "323533303931383830363636303837333737303634333900FFFFFF",
+                    "Tok": "16",
+                    "Ver": "NF13.07"
+                }
+            ],
+            "writeable": 0
+        },
+        {
+            "id": "/system/minOutdoorTemp",
+            "maxValue": 10.0,
+            "minValue": -35.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": -20.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "error",
+                "maintenance",
+                "ok"
+            ],
+            "id": "/system/healthStatus",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "ok",
+            "writeable": 0
+        },
+        {
+            "id": "/system/sensors",
+            "references": [
+                {
+                    "id": "/system/sensors/temperatures",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/sensors/temperatures",
+            "references": [
+                {
+                    "id": "/system/sensors/temperatures/outdoor_t1",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
+                },
+                {
+                    "id": "/system/sensors/temperatures/supply_t1_setpoint",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/supply_t1_setpoint"
+                },
+                {
+                    "id": "/system/sensors/temperatures/supply_t1",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/supply_t1"
+                },
+                {
+                    "id": "/system/sensors/temperatures/return",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/return"
+                },
+                {
+                    "id": "/system/sensors/temperatures/switch",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/switch"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/sensors/temperatures/outdoor_t1",
+            "recordable": 1,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 26.7,
+            "writeable": 0
+        },
+        {
+            "id": "/system/sensors/temperatures/supply_t1_setpoint",
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 0.0,
+            "writeable": 0
+        },
+        {
+            "id": "/system/sensors/temperatures/supply_t1",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 25.8,
+            "writeable": 0
+        },
+        {
+            "id": "/system/sensors/temperatures/return",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 53.5,
+            "writeable": 0
+        },
+        {
+            "id": "/system/sensors/temperatures/switch",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 25.8,
+            "writeable": 0
+        },
+        {
+            "id": "/system/appliance",
+            "references": [
+                {
+                    "id": "/system/appliance/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/system/appliance/actualSupplyTemperature"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/appliance/actualSupplyTemperature",
+            "recordable": 0,
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ],
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 25.8,
+            "writeable": 0
+        },
+        {
+            "id": "/system/holidayModes",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm1",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1"
+                },
+                {
+                    "id": "/system/holidayModes/hm2",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2"
+                },
+                {
+                    "id": "/system/holidayModes/hm3",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3"
+                },
+                {
+                    "id": "/system/holidayModes/hm4",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4"
+                },
+                {
+                    "id": "/system/holidayModes/hm5",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm1",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm1/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/delete"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm1/startStop",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2020-06-25/2020-06-26",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ],
+            "id": "/system/holidayModes/hm1/assignedTo",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [],
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "FIX_TEMP",
+                "OFF"
+            ],
+            "id": "/system/holidayModes/hm1/hcMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ],
+            "id": "/system/holidayModes/hm1/dhwMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm2",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm2/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/fixTemperature",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/fixTemperature"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/delete"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm2/startStop",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2017-01-01/2017-01-01",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ],
+            "id": "/system/holidayModes/hm2/assignedTo",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [],
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "FIX_TEMP",
+                "OFF"
+            ],
+            "id": "/system/holidayModes/hm2/hcMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "FIX_TEMP",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm2/fixTemperature",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 17.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ],
+            "id": "/system/holidayModes/hm2/dhwMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm3",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm3/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/fixTemperature",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/fixTemperature"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/delete"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm3/startStop",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2017-01-01/2017-01-01",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ],
+            "id": "/system/holidayModes/hm3/assignedTo",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [],
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "FIX_TEMP",
+                "OFF"
+            ],
+            "id": "/system/holidayModes/hm3/hcMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "FIX_TEMP",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm3/fixTemperature",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 17.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ],
+            "id": "/system/holidayModes/hm3/dhwMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm4",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm4/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/fixTemperature",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/fixTemperature"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/delete"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm4/startStop",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2017-01-01/2017-01-01",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ],
+            "id": "/system/holidayModes/hm4/assignedTo",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [],
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "FIX_TEMP",
+                "OFF"
+            ],
+            "id": "/system/holidayModes/hm4/hcMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "FIX_TEMP",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm4/fixTemperature",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 17.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ],
+            "id": "/system/holidayModes/hm4/dhwMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm5",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm5/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/fixTemperature",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/fixTemperature"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/delete"
+                }
+            ],
+            "type": "refEnum"
+        },
+        {
+            "id": "/system/holidayModes/hm5/startStop",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "2017-01-01/2017-01-01",
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ],
+            "id": "/system/holidayModes/hm5/assignedTo",
+            "recordable": 0,
+            "type": "arrayData",
+            "values": [],
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "FIX_TEMP",
+                "OFF"
+            ],
+            "id": "/system/holidayModes/hm5/hcMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "FIX_TEMP",
+            "writeable": 1
+        },
+        {
+            "id": "/system/holidayModes/hm5/fixTemperature",
+            "maxValue": 30.0,
+            "minValue": 5.0,
+            "recordable": 0,
+            "type": "floatValue",
+            "unitOfMeasure": "C",
+            "value": 17.0,
+            "writeable": 1
+        },
+        {
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ],
+            "id": "/system/holidayModes/hm5/dhwMode",
+            "recordable": 0,
+            "type": "stringValue",
+            "value": "OFF",
+            "writeable": 1
+        }
+    ],
+    [
+        {
+            "id": "/solarCircuits",
+            "references": [],
+            "type": "refEnum"
+        }
+    ]
+]

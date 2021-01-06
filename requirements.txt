@@ -2,3 +2,4 @@ pyaes>=1.6.1
 click>=7
 flask
 waitress
+setuptools

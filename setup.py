@@ -28,7 +28,7 @@ setup(
     maintainer=author,
     maintainer_email=email,
     url='https://github.com/pszafer/bosch_thermostat_http_simulator',
-    download_url='https://github.com/pszafer/bosch_thermostat_http_simulator/archive/{}.zip'.format(__version__),
+    download_url='https://github.com/pszafer/bosch_thermostat_http_simulator/archive/v{}.zip'.format(__version__),
     packages=["bosch_thermostat_http_simulator"],
     install_requires=REQUIRES,
     include_package_data=True,
