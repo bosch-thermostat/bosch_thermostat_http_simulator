@@ -7,13 +7,12 @@ import json
 from pyaes import PADDING_NONE, AESModeOfOperationECB, Decrypter, Encrypter
 
 BS = 16
-MAGIC = bytearray.fromhex(
-    "867845e97c4e29dce522b9a7d3a3e07b152bffadddbed7f5ffd842e9895ad1e4")
+
 
 class Encryption:
     """Encryption class."""
 
-    def __init__(self, access_key, password=None):
+    def __init__(self, access_key, magic, password=None):
         """
         Initialize encryption.
 
@@ -23,8 +22,8 @@ class Encryption:
         """
         self._bs = BS
         if password and access_key:
-            key_hash = hashlib.md5(bytearray(access_key, "utf8") + MAGIC)
-            password_hash = hashlib.md5(MAGIC + bytearray(password, "utf8"))
+            key_hash = hashlib.md5(bytearray(access_key, "utf8") + magic)
+            password_hash = hashlib.md5(magic + bytearray(password, "utf8"))
             self._saved_key = key_hash.hexdigest() + password_hash.hexdigest()
             self._key = binascii.unhexlify(self._saved_key)
         elif access_key:
@@ -45,9 +44,7 @@ class Encryption:
         """Encrypt raw message."""
         if len(raw) % self._bs != 0:
             raw = self._pad(raw)
-        cipher = Encrypter(
-            AESModeOfOperationECB(self._key),
-            padding=PADDING_NONE)
+        cipher = Encrypter(AESModeOfOperationECB(self._key), padding=PADDING_NONE)
         ciphertext = cipher.feed(raw) + cipher.feed()
         return base64.b64encode(ciphertext)
 
@@ -68,8 +65,8 @@ class Encryption:
                     print("padding already", len(enc) % self._bs)
                     print(enc)
                 cipher = Decrypter(
-                    AESModeOfOperationECB(self._key),
-                    padding=PADDING_NONE)
+                    AESModeOfOperationECB(self._key), padding=PADDING_NONE
+                )
                 decrypted = cipher.feed(enc) + cipher.feed()
                 print(decrypted)
                 return decrypted.decode("utf8").rstrip(chr(0))

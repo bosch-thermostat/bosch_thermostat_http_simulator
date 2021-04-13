@@ -1,0 +1,2019 @@
+[
+  [
+    {
+      "id": "/dhwCircuits",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/dhwCircuits/dhwA"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/dhwCircuits/dhwA/dhwCurrentSwitchpoint"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwNextSwitchpoint"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOffDuringAbsence"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOffDuringNight"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOperationClockMode"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOperationManualMode"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOperationMode"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOperationState"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwOperationType"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwProgram0"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwProgram1"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/dhwProgram2"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/extraDhw"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/hotWaterSystem"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/thermaldesinfect"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwCurrentSwitchpoint",
+      "type": "DhwProgram",
+      "recordable": 0,
+      "writeable": 0,
+      "value": [
+        {
+          "d": "Th",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwNextSwitchpoint",
+      "type": "DhwProgram",
+      "recordable": 0,
+      "writeable": 0,
+      "value": []
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOffDuringAbsence",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "true"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOffDuringNight",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "true"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOperationClockMode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOperationManualMode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "on"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOperationMode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "comfort"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOperationState",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "on"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwOperationType",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "follow ch"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwProgram0",
+      "type": "DhwProgram",
+      "recordable": 0,
+      "writeable": 1,
+      "value": [
+        {
+          "d": "Su",
+          "t": 480,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Su",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Mo",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Mo",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Tu",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Tu",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "We",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "We",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Th",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Th",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Fr",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Fr",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 480,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Sa",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwProgram1",
+      "type": "DhwProgram",
+      "recordable": 0,
+      "writeable": 1,
+      "value": [
+        {
+          "d": "Su",
+          "t": 480,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Su",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Mo",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Mo",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Tu",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Tu",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "We",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "We",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Th",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Th",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Fr",
+          "t": 540,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 1020,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Fr",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 480,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Sa",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/dhwProgram2",
+      "type": "DhwProgram",
+      "recordable": 0,
+      "writeable": 1,
+      "value": [
+        {
+          "d": "Su",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Su",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Su",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Mo",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Mo",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Tu",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Tu",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "We",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "We",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Th",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Th",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Fr",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Fr",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 420,
+          "active": "on",
+          "dhw": "on"
+        },
+        {
+          "d": "Sa",
+          "t": 1380,
+          "active": "on",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        },
+        {
+          "d": "Sa",
+          "t": 0,
+          "active": "off",
+          "dhw": "off"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/extraDhw",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/dhwCircuits/dhwA/extraDhw/duration"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/extraDhw/status"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/extraDhw/supported"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/extraDhw/duration",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 20,
+      "unitOfMeasure": "Min",
+      "minValue": 5,
+      "maxValue": 60
+    },
+    {
+      "id": "/dhwCircuits/dhwA/extraDhw/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/extraDhw/supported",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "false"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/hotWaterSystem",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 1,
+      "unitOfMeasure": "",
+      "minValue": 0,
+      "maxValue": 4
+    },
+    {
+      "id": "/dhwCircuits/dhwA/thermaldesinfect",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/dhwCircuits/dhwA/thermaldesinfect/lastresult"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/thermaldesinfect/state"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/thermaldesinfect/time"
+        },
+        {
+          "id": "/dhwCircuits/dhwA/thermaldesinfect/weekday"
+        }
+      ]
+    },
+    {
+      "id": "/dhwCircuits/dhwA/thermaldesinfect/lastresult",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "Done"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/thermaldesinfect/state",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/dhwCircuits/dhwA/thermaldesinfect/time",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 60,
+      "unitOfMeasure": "Min",
+      "minValue": 0,
+      "maxValue": 1440
+    },
+    {
+      "id": "/dhwCircuits/dhwA/thermaldesinfect/weekday",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "Mo"
+    }
+  ],
+  [
+    {
+      "id": "/gateway",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/brand"
+        },
+        {
+          "id": "/gateway/brandID"
+        },
+        {
+          "id": "/gateway/installerenabled"
+        },
+        {
+          "id": "/gateway/installerpassword"
+        },
+        {
+          "id": "/gateway/outdoor"
+        },
+        {
+          "id": "/gateway/productID"
+        },
+        {
+          "id": "/gateway/remoteServicesPassword"
+        },
+        {
+          "id": "/gateway/remote"
+        },
+        {
+          "id": "/gateway/serialnumber"
+        },
+        {
+          "id": "/gateway/softreset"
+        },
+        {
+          "id": "/gateway/time"
+        },
+        {
+          "id": "/gateway/update"
+        },
+        {
+          "id": "/gateway/userpassword"
+        },
+        {
+          "id": "/gateway/uuid"
+        },
+        {
+          "id": "/gateway/versionFirmware"
+        },
+        {
+          "id": "/gateway/versionHardware"
+        },
+        {
+          "id": "/gateway/wifi"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/brand",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "Junkers"
+    },
+    {
+      "id": "/gateway/brandID",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "0x2"
+    },
+    {
+      "id": "/gateway/installerenabled",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 0,
+      "unitOfMeasure": "Min",
+      "minValue": 0,
+      "maxValue": 120
+    },
+    {
+      "id": "/gateway/outdoor",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/outdoor/sensor"
+        },
+        {
+          "id": "/gateway/outdoor/source"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/outdoor/sensor",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "no"
+    },
+    {
+      "id": "/gateway/outdoor/source",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "current region temp"
+    },
+    {
+      "id": "/gateway/productID",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "7746901877"
+    },
+    {
+      "id": "/gateway/remoteServicesPassword",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "zq/Uz856qvGeGoFD"
+    },
+    {
+      "id": "/gateway/remote",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/remote/fdlogger"
+        },
+        {
+          "id": "/gateway/remote/servicestate"
+        },
+        {
+          "id": "/gateway/remote/tempsid"
+        },
+        {
+          "id": "/gateway/remote/tempsidexptime"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/remote/servicestate",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "No service"
+    },
+    {
+      "id": "/gateway/remote/tempsid",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "expired"
+    },
+    {
+      "id": "/gateway/remote/tempsidexptime",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "1970-01-01T00:00:00"
+    },
+    {
+      "id": "/gateway/serialnumber",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "37206609407907746901877"
+    },
+    {
+      "id": "/gateway/time",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/time/current"
+        },
+        {
+          "id": "/gateway/time/dst"
+        },
+        {
+          "id": "/gateway/time/status"
+        },
+        {
+          "id": "/gateway/time/summertime"
+        },
+        {
+          "id": "/gateway/time/timestamp"
+        },
+        {
+          "id": "/gateway/time/timezone"
+        },
+        {
+          "id": "/gateway/time/timezoneUTCoffset"
+        },
+        {
+          "id": "/gateway/time/wintertime"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/time/current",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "2021-02-26T06:59:08+00:00 Fr"
+    },
+    {
+      "id": "/gateway/time/dst",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "false"
+    },
+    {
+      "id": "/gateway/time/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "configured"
+    },
+    {
+      "id": "/gateway/time/summertime",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "2021-03-28T02:00:00"
+    },
+    {
+      "id": "/gateway/time/timestamp",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "2021-02-26T02:38:50"
+    },
+    {
+      "id": "/gateway/time/timezone",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "Europe/Brussels"
+    },
+    {
+      "id": "/gateway/time/timezoneUTCoffset",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "+00:00"
+    },
+    {
+      "id": "/gateway/time/wintertime",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "2021-10-31T03:00:00"
+    },
+    {
+      "id": "/gateway/update",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/update/lastcheck"
+        },
+        {
+          "id": "/gateway/update/request"
+        },
+        {
+          "id": "/gateway/update/strategy"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/update/lastcheck",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "2000-01-01T00:00:00"
+    },
+    {
+      "id": "/gateway/update/strategy",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "automatic"
+    },
+    {
+      "id": "/gateway/uuid",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "-1"
+    },
+    {
+      "id": "/gateway/versionFirmware",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "02.22.00"
+    },
+    {
+      "id": "/gateway/versionHardware",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "4"
+    },
+    {
+      "id": "/gateway/wifi",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/wifi/status"
+        },
+        {
+          "id": "/gateway/wifi/update"
+        },
+        {
+          "id": "/gateway/wifi/versionFirmware"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/wifi/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "configured"
+    },
+    {
+      "id": "/gateway/wifi/update",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/gateway/wifi/update/address"
+        },
+        {
+          "id": "/gateway/wifi/update/dir"
+        },
+        {
+          "id": "/gateway/wifi/update/file"
+        },
+        {
+          "id": "/gateway/wifi/update/mode"
+        },
+        {
+          "id": "/gateway/wifi/update/password"
+        },
+        {
+          "id": "/gateway/wifi/update/port"
+        },
+        {
+          "id": "/gateway/wifi/update/request"
+        },
+        {
+          "id": "/gateway/wifi/update/timeout"
+        },
+        {
+          "id": "/gateway/wifi/update/user"
+        }
+      ]
+    },
+    {
+      "id": "/gateway/wifi/update/address",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "198.175.253.161"
+    },
+    {
+      "id": "/gateway/wifi/update/dir",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "public"
+    },
+    {
+      "id": "/gateway/wifi/update/file",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "wifly-GSX.img"
+    },
+    {
+      "id": "/gateway/wifi/update/mode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "passive"
+    },
+    {
+      "id": "/gateway/wifi/update/password",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "Pass123"
+    },
+    {
+      "id": "/gateway/wifi/update/port",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 21,
+      "unitOfMeasure": "",
+      "minValue": 0,
+      "maxValue": 65535
+    },
+    {
+      "id": "/gateway/wifi/update/timeout",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 80,
+      "unitOfMeasure": "",
+      "minValue": 0,
+      "maxValue": 80
+    },
+    {
+      "id": "/gateway/wifi/update/user",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "roving"
+    },
+    {
+      "id": "/gateway/wifi/versionFirmware",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "4.00"
+    }
+  ],
+  [
+    {
+      "id": "/heatingCircuits",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/heatingCircuits/hc1"
+        }
+      ]
+    },
+    {
+      "id": "/heatingCircuits/hc1",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/heatingCircuits/hc1/actualSupplyTemperature"
+        },
+        {
+          "id": "/heatingCircuits/hc1/control"
+        },
+        {
+          "id": "/heatingCircuits/hc1/holidayMode"
+        },
+        {
+          "id": "/heatingCircuits/hc1/manualTempOverride"
+        },
+        {
+          "id": "/heatingCircuits/hc1/operationMode"
+        },
+        {
+          "id": "/heatingCircuits/hc1/pband"
+        },
+        {
+          "id": "/heatingCircuits/hc1/powerSetpoint"
+        },
+        {
+          "id": "/heatingCircuits/hc1/roomtemperature"
+        },
+        {
+          "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint"
+        },
+        {
+          "id": "/heatingCircuits/hc1/temperatureAdjustment"
+        },
+        {
+          "id": "/heatingCircuits/hc1/temperatureRoomManual"
+        },
+        {
+          "id": "/heatingCircuits/hc1/temperatureRoomSetpoint"
+        },
+        {
+          "id": "/heatingCircuits/hc1/type"
+        },
+        {
+          "id": "/heatingCircuits/hc1/usermode"
+        }
+      ]
+    },
+    {
+      "id": "/heatingCircuits/hc1/actualSupplyTemperature",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 41.4,
+      "unitOfMeasure": "C",
+      "minValue": 0,
+      "maxValue": 100
+    },
+    {
+      "id": "/heatingCircuits/hc1/control",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "room"
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/heatingCircuits/hc1/holidayMode/activated"
+        },
+        {
+          "id": "/heatingCircuits/hc1/holidayMode/end"
+        },
+        {
+          "id": "/heatingCircuits/hc1/holidayMode/start"
+        },
+        {
+          "id": "/heatingCircuits/hc1/holidayMode/status"
+        },
+        {
+          "id": "/heatingCircuits/hc1/holidayMode/temperature"
+        }
+      ]
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode/activated",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode/end",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "2000-01-01T00:00:00"
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode/start",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "2000-01-01T00:00:00"
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/heatingCircuits/hc1/holidayMode/temperature",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 10,
+      "unitOfMeasure": "C",
+      "minValue": 5,
+      "maxValue": 30
+    },
+    {
+      "id": "/heatingCircuits/hc1/manualTempOverride",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/heatingCircuits/hc1/manualTempOverride/duration"
+        },
+        {
+          "id": "/heatingCircuits/hc1/manualTempOverride/status"
+        },
+        {
+          "id": "/heatingCircuits/hc1/manualTempOverride/temperature"
+        }
+      ]
+    },
+    {
+      "id": "/heatingCircuits/hc1/manualTempOverride/duration",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 0,
+      "unitOfMeasure": "Min",
+      "minValue": 0,
+      "maxValue": 1440
+    },
+    {
+      "id": "/heatingCircuits/hc1/manualTempOverride/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "off"
+    },
+    {
+      "id": "/heatingCircuits/hc1/manualTempOverride/temperature",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 17,
+      "unitOfMeasure": "C",
+      "minValue": 5,
+      "maxValue": 30
+    },
+    {
+      "id": "/heatingCircuits/hc1/operationMode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "auto"
+    },
+    {
+      "id": "/heatingCircuits/hc1/pband",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 1.42,
+      "unitOfMeasure": "",
+      "minValue": 0.01,
+      "maxValue": 5
+    },
+    {
+      "id": "/heatingCircuits/hc1/powerSetpoint",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 37,
+      "unitOfMeasure": "%",
+      "minValue": 0,
+      "maxValue": 100
+    },
+    {
+      "id": "/heatingCircuits/hc1/roomtemperature",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "22.65",
+      "unitOfMeasure": "C",
+      "status": "ok"
+    },
+    {
+      "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 0,
+      "unitOfMeasure": "C",
+      "minValue": 5,
+      "maxValue": 90
+    },
+    {
+      "id": "/heatingCircuits/hc1/temperatureAdjustment",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 0,
+      "unitOfMeasure": "C",
+      "minValue": -2,
+      "maxValue": 2
+    },
+    {
+      "id": "/heatingCircuits/hc1/temperatureRoomManual",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": 22.5,
+      "unitOfMeasure": "C",
+      "minValue": 5,
+      "maxValue": 30
+    },
+    {
+      "id": "/heatingCircuits/hc1/temperatureRoomSetpoint",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 22.5,
+      "unitOfMeasure": "C",
+      "minValue": 5,
+      "maxValue": 30
+    },
+    {
+      "id": "/heatingCircuits/hc1/type",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "radiator"
+    },
+    {
+      "id": "/heatingCircuits/hc1/usermode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "manual"
+    }
+  ],
+  [],
+  [
+    {
+      "id": "/notifications",
+      "type": "errorList",
+      "recordable": 0,
+      "writeable": 0,
+      "used": "false",
+      "available": "false",
+      "value": []
+    }
+  ],
+  [
+    {
+      "id": "/system",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/appliance"
+        },
+        {
+          "id": "/system/interfaces"
+        },
+        {
+          "id": "/system/brand"
+        },
+        {
+          "id": "/system/location"
+        },
+        {
+          "id": "/system/sensors"
+        }
+      ]
+    },
+    {
+      "id": "/system/appliance",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/appliance/actualPower"
+        },
+        {
+          "id": "/system/appliance/boilerblockingerror"
+        },
+        {
+          "id": "/system/appliance/boilerlockingerror"
+        },
+        {
+          "id": "/system/appliance/boilermaintenancerequest"
+        },
+        {
+          "id": "/system/appliance/causecode"
+        },
+        {
+          "id": "/system/appliance/cm"
+        },
+        {
+          "id": "/system/appliance/displaycode"
+        },
+        {
+          "id": "/system/appliance/serialnumber"
+        },
+        {
+          "id": "/system/appliance/softreset"
+        },
+        {
+          "id": "/system/appliance/systemPressure"
+        },
+        {
+          "id": "/system/appliance/type"
+        },
+        {
+          "id": "/system/appliance/version"
+        }
+      ]
+    },
+    {
+      "id": "/system/appliance/actualPower",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 0,
+      "unitOfMeasure": "%",
+      "minValue": 0,
+      "maxValue": 100,
+      "reason": "CH"
+    },
+    {
+      "id": "/system/appliance/boilerblockingerror",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "false"
+    },
+    {
+      "id": "/system/appliance/boilerlockingerror",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "false"
+    },
+    {
+      "id": "/system/appliance/boilermaintenancerequest",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "false"
+    },
+    {
+      "id": "/system/appliance/causecode",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 0,
+      "unitOfMeasure": "",
+      "minValue": 200,
+      "maxValue": 65535
+    },
+    {
+      "id": "/system/appliance/cm",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/appliance/cm/type"
+        },
+        {
+          "id": "/system/appliance/cm/version"
+        }
+      ]
+    },
+    {
+      "id": "/system/appliance/cm/type",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "0x2BEC"
+    },
+    {
+      "id": "/system/appliance/cm/version",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "0"
+    },
+    {
+      "id": "/system/appliance/displaycode",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": ""
+    },
+    {
+      "id": "/system/appliance/serialnumber",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "7133310270-0010003280-110102"
+    },
+    {
+      "id": "/system/appliance/systemPressure",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 25.5,
+      "unitOfMeasure": "bar",
+      "minValue": 0,
+      "maxValue": 25
+    },
+    {
+      "id": "/system/appliance/type",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "0x5F"
+    },
+    {
+      "id": "/system/appliance/version",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "18.7"
+    },
+    {
+      "id": "/system/interfaces",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/interfaces/ems"
+        }
+      ]
+    },
+    {
+      "id": "/system/interfaces/ems",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/interfaces/ems/brandbit"
+        }
+      ]
+    },
+    {
+      "id": "/system/interfaces/ems/brandbit",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "Junkers"
+    },
+    {
+      "id": "/system/brand",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "unknown"
+    },
+    {
+      "id": "/system/location",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/location/latitude"
+        },
+        {
+          "id": "/system/location/localization"
+        },
+        {
+          "id": "/system/location/longitude"
+        }
+      ]
+    },
+    {
+      "id": "/system/location/latitude",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "51.184095"
+    },
+    {
+      "id": "/system/location/localization",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "de"
+    },
+    {
+      "id": "/system/location/longitude",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 1,
+      "value": "4.1086701"
+    },
+    {
+      "id": "/system/sensors",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/sensors/flow"
+        },
+        {
+          "id": "/system/sensors/temperatures"
+        }
+      ]
+    },
+    {
+      "id": "/system/sensors/flow",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/sensors/flow/dhwA"
+        }
+      ]
+    },
+    {
+      "id": "/system/sensors/flow/dhwA",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/sensors/flow/dhwA/status"
+        }
+      ]
+    },
+    {
+      "id": "/system/sensors/flow/dhwA/status",
+      "type": "stringValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": "not present"
+    },
+    {
+      "id": "/system/sensors/temperatures",
+      "type": "refEnum",
+      "references": [
+        {
+          "id": "/system/sensors/temperatures/outdoor_t1"
+        }
+      ]
+    },
+    {
+      "id": "/system/sensors/temperatures/outdoor_t1",
+      "type": "floatValue",
+      "recordable": 0,
+      "writeable": 0,
+      "value": 6,
+      "unitOfMeasure": "C",
+      "minValue": -40,
+      "maxValue": 50,
+      "status": "ok",
+      "srcType": "virtual",
+      "timestamp": "2021-02-26T06:57:06"
+    }
+  ],
+  []
+]
