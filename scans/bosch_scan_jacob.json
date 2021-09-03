@@ -61,7 +61,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "auto",
+            "value": "on",
             "allowedValues": [
                 "auto",
                 "on",
@@ -83,7 +83,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 390832.0,
+            "value": 448740.0,
             "unitOfMeasure": "minutes",
             "minValue": 0.0,
             "maxValue": 16777215.0
@@ -207,7 +207,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 58.7,
+            "value": 54.9,
             "unitOfMeasure": "C"
         },
         {
@@ -270,8 +270,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": -1,
-            "allowedValues": -1
+            "value": "-1"
         },
         {
             "id": "/gateway/instAccess",
@@ -314,7 +313,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "2020-03-26T19:34:22"
+            "value": "2021-06-28T09:37:29"
         }
     ],
     [
@@ -427,7 +426,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 24.0,
+            "value": 0.0,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 30.0
@@ -437,7 +436,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 57.0,
+            "value": 30.0,
             "unitOfMeasure": "C"
         },
         {
@@ -457,7 +456,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 24.0,
+            "value": 0.0,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 30.0
@@ -475,7 +474,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 1,
-            "value": 24.0,
+            "value": 25.0,
             "unitOfMeasure": "C",
             "minValue": 6.0,
             "maxValue": 30.0
@@ -487,7 +486,7 @@
             "recordable": 0,
             "values": [
                 {
-                    "auto": "on",
+                    "auto": "off",
                     "manual": "off",
                     "holiday": "off",
                     "floordrying": "off"
@@ -735,142 +734,72 @@
                 {
                     "dayOfWeek": "Mo",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Mo",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "Mo",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Mo",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "Tu",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Tu",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "Tu",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Tu",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "We",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "We",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "We",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "We",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "Th",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Th",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "Th",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Th",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "Fr",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Fr",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "Fr",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Fr",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "Sa",
                     "setpoint": "day",
-                    "time": 480
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Sa",
                     "setpoint": "night",
-                    "time": 540
-                },
-                {
-                    "dayOfWeek": "Sa",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Sa",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 },
                 {
                     "dayOfWeek": "Su",
                     "setpoint": "day",
-                    "time": 440
+                    "time": 1110
                 },
                 {
                     "dayOfWeek": "Su",
                     "setpoint": "night",
-                    "time": 500
-                },
-                {
-                    "dayOfWeek": "Su",
-                    "setpoint": "day",
-                    "time": 1200
-                },
-                {
-                    "dayOfWeek": "Su",
-                    "setpoint": "night",
-                    "time": 1260
+                    "time": 1140
                 }
             ]
         },
@@ -1805,7 +1734,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 1,
-            "value": 17.0,
+            "value": 16.0,
             "unitOfMeasure": "C",
             "minValue": 5.0,
             "maxValue": 29.0
@@ -1815,7 +1744,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 1,
-            "value": 24.0,
+            "value": 25.0,
             "unitOfMeasure": "C",
             "minValue": 6.0,
             "maxValue": 30.0
@@ -1825,7 +1754,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 64.0,
+            "value": 0.0,
             "unitOfMeasure": "%",
             "minValue": 0.0,
             "maxValue": 100.0
@@ -1964,7 +1893,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 70.0,
             "unitOfMeasure": "kW"
         },
         {
@@ -1972,7 +1901,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 70.0,
             "unitOfMeasure": "%"
         },
         {
@@ -1980,7 +1909,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 70.0,
             "unitOfMeasure": "%"
         },
         {
@@ -1988,7 +1917,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 70.0,
             "unitOfMeasure": "%"
         },
         {
@@ -1996,7 +1925,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 100.0,
+            "value": 123.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2011,7 +1940,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 64.0,
+            "value": 0.0,
             "unitOfMeasure": "%",
             "minValue": 0.0,
             "maxValue": 100.0
@@ -2067,7 +1996,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 163906,
+            "value": 175243,
             "unitOfMeasure": " ",
             "minValue": 0,
             "maxValue": 16777215
@@ -2077,7 +2006,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 57.0,
+            "value": 75.0,
             "unitOfMeasure": "C",
             "minValue": 5.0,
             "maxValue": 90.0
@@ -2087,7 +2016,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 57.0,
+            "value": 36.7,
             "unitOfMeasure": "C"
         },
         {
@@ -2095,7 +2024,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 57.0,
+            "value": 36.7,
             "unitOfMeasure": "C"
         },
         {
@@ -2103,7 +2032,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 100.0,
+            "value": 123.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2111,7 +2040,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 48.2,
             "unitOfMeasure": "C"
         },
         {
@@ -2119,7 +2048,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 1.6,
+            "value": 1.4,
             "unitOfMeasure": "bar",
             "minValue": 0.0,
             "maxValue": 25.5
@@ -2147,7 +2076,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 2261369,
+            "value": 2563813,
             "unitOfMeasure": "minutes",
             "minValue": 0,
             "maxValue": 16777215
@@ -2167,7 +2096,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 1870537,
+            "value": 2115073,
             "unitOfMeasure": "minutes",
             "minValue": 0,
             "maxValue": 16777215
@@ -2189,48 +2118,7 @@
             "unitOfMeasure": "%"
         }
     ],
-    [
-        {
-            "id": "/notifications",
-            "type": "errorList",
-            "recordable": 0,
-            "writeable": 0,
-            "values": [
-                {
-                    "cat": "L",
-                    "act": "H",
-                    "dcd": "3C",
-                    "ccd": 217,
-                    "orig": "0",
-                    "t": "2019-10-10T09:38:00"
-                },
-                {
-                    "cat": "B",
-                    "act": "H",
-                    "dcd": "2F",
-                    "ccd": 271,
-                    "orig": "0",
-                    "t": "2020-03-20T07:18:00"
-                },
-                {
-                    "cat": "A",
-                    "act": "H",
-                    "dcd": "A01",
-                    "ccd": 809,
-                    "orig": "8",
-                    "t": "2016-09-23T21:01:00"
-                },
-                {
-                    "cat": "A",
-                    "act": "H",
-                    "dcd": "A01",
-                    "ccd": 811,
-                    "orig": "8",
-                    "t": "2015-10-24T07:35:00"
-                }
-            ]
-        }
-    ],
+    [],
     [
         {
             "id": "/system",
@@ -2360,7 +2248,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 3.2,
+            "value": 27.3,
             "unitOfMeasure": "C"
         },
         {
@@ -2368,7 +2256,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 57.0,
+            "value": 75.0,
             "unitOfMeasure": "C",
             "minValue": 5.0,
             "maxValue": 90.0
@@ -2378,7 +2266,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 57.0,
+            "value": 40.4,
             "unitOfMeasure": "C"
         },
         {
@@ -2394,7 +2282,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 58.7,
+            "value": 54.9,
             "unitOfMeasure": "C"
         },
         {
@@ -2402,7 +2290,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 42.9,
             "unitOfMeasure": "C"
         },
         {
@@ -2498,7 +2386,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 57.0,
+            "value": 40.4,
             "unitOfMeasure": "C"
         },
         {
@@ -2506,7 +2394,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 100.0,
+            "value": 123.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2514,7 +2402,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 50.0,
+            "value": 72.0,
             "unitOfMeasure": "kW"
         },
         {
@@ -2522,7 +2410,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 64.0,
+            "value": 100.0,
             "unitOfMeasure": "%",
             "minValue": 0.0,
             "maxValue": 100.0
@@ -2532,7 +2420,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 163906,
+            "value": 175244,
             "unitOfMeasure": " ",
             "minValue": 0,
             "maxValue": 16777215
@@ -2550,7 +2438,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 1.6,
+            "value": 1.5,
             "unitOfMeasure": "bar",
             "minValue": 0.0,
             "maxValue": 25.5
@@ -2598,7 +2486,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 2261369,
+            "value": 2563813,
             "unitOfMeasure": "minutes",
             "minValue": 0,
             "maxValue": 16777215
@@ -2618,7 +2506,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 1870537,
+            "value": 2115073,
             "unitOfMeasure": "minutes",
             "minValue": 0,
             "maxValue": 16777215
@@ -2633,5 +2521,2843 @@
             "minValue": 0.0,
             "maxValue": 25.5
         }
-    ]
+    ],
+    [
+        {
+            "id": "/solarCircuits",
+            "type": "refEnum",
+            "references": []
+        }
+    ],
+    [
+        {
+            "id": "/recordings",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/solarYield",
+                    "uri": "http://THERMOSTAT/recordings/solarYield"
+                },
+                {
+                    "id": "/recordings/solarCircuits",
+                    "uri": "http://THERMOSTAT/recordings/solarCircuits"
+                },
+                {
+                    "id": "/recordings/system",
+                    "uri": "http://THERMOSTAT/recordings/system"
+                },
+                {
+                    "id": "/recordings/heatSources",
+                    "uri": "http://THERMOSTAT/recordings/heatSources"
+                },
+                {
+                    "id": "/recordings/heatingCircuits",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarYield?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarYield?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarYield?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarYield",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/solarCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/solarCircuits/sc1",
+                    "uri": "http://THERMOSTAT/recordings/solarCircuits/sc1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarCircuits/sc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/solarCircuits/sc1/solarYield",
+                    "uri": "http://THERMOSTAT/recordings/solarCircuits/sc1/solarYield"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarCircuits/sc1/solarYield?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarCircuits/sc1/solarYield?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarCircuits/sc1/solarYield?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/solarCircuits/sc1/solarYield",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/solarCircuits/sc1/solarYield",
+                "uri": "http://192.168.177.54/solarCircuits/sc1/solarYield"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/system",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors/temperatures",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors/temperatures"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors/temperatures/outdoor_t1",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors/temperatures/outdoor_t1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.177.54/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1019,
+                    "c": 59
+                },
+                {
+                    "y": 982,
+                    "c": 60
+                },
+                {
+                    "y": 952,
+                    "c": 60
+                },
+                {
+                    "y": 933,
+                    "c": 60
+                },
+                {
+                    "y": 926,
+                    "c": 60
+                },
+                {
+                    "y": 930,
+                    "c": 60
+                },
+                {
+                    "y": 951,
+                    "c": 60
+                },
+                {
+                    "y": 1090,
+                    "c": 60
+                },
+                {
+                    "y": 1680,
+                    "c": 60
+                },
+                {
+                    "y": 1785,
+                    "c": 60
+                },
+                {
+                    "y": 1455,
+                    "c": 60
+                },
+                {
+                    "y": 1441,
+                    "c": 60
+                },
+                {
+                    "y": 1448,
+                    "c": 60
+                },
+                {
+                    "y": 1493,
+                    "c": 60
+                },
+                {
+                    "y": 1511,
+                    "c": 60
+                },
+                {
+                    "y": 1555,
+                    "c": 60
+                },
+                {
+                    "y": 1588,
+                    "c": 60
+                },
+                {
+                    "y": 1599,
+                    "c": 60
+                },
+                {
+                    "y": 1606,
+                    "c": 60
+                },
+                {
+                    "y": 1551,
+                    "c": 60
+                },
+                {
+                    "y": 1464,
+                    "c": 60
+                },
+                {
+                    "y": 1421,
+                    "c": 60
+                },
+                {
+                    "y": 1380,
+                    "c": 60
+                },
+                {
+                    "y": 1188,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.177.54/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 24367,
+                    "c": 1434
+                },
+                {
+                    "y": 26514,
+                    "c": 1439
+                },
+                {
+                    "y": 28468,
+                    "c": 1440
+                },
+                {
+                    "y": 28708,
+                    "c": 1439
+                },
+                {
+                    "y": 24514,
+                    "c": 1439
+                },
+                {
+                    "y": 23152,
+                    "c": 1439
+                },
+                {
+                    "y": 26001,
+                    "c": 1440
+                },
+                {
+                    "y": 26305,
+                    "c": 1439
+                },
+                {
+                    "y": 26167,
+                    "c": 1439
+                },
+                {
+                    "y": 26430,
+                    "c": 1440
+                },
+                {
+                    "y": 29263,
+                    "c": 1439
+                },
+                {
+                    "y": 30919,
+                    "c": 1439
+                },
+                {
+                    "y": 30041,
+                    "c": 1378
+                },
+                {
+                    "y": 28620,
+                    "c": 1368
+                },
+                {
+                    "y": 30007,
+                    "c": 1410
+                },
+                {
+                    "y": 30054,
+                    "c": 1329
+                },
+                {
+                    "y": 28270,
+                    "c": 1208
+                },
+                {
+                    "y": 34098,
+                    "c": 1359
+                },
+                {
+                    "y": 37914,
+                    "c": 1440
+                },
+                {
+                    "y": 34387,
+                    "c": 1439
+                },
+                {
+                    "y": 32107,
+                    "c": 1439
+                },
+                {
+                    "y": 29759,
+                    "c": 1439
+                },
+                {
+                    "y": 30638,
+                    "c": 1440
+                },
+                {
+                    "y": 26883,
+                    "c": 1439
+                },
+                {
+                    "y": 28056,
+                    "c": 1439
+                },
+                {
+                    "y": 29724,
+                    "c": 1440
+                },
+                {
+                    "y": 31948,
+                    "c": 1439
+                },
+                {
+                    "y": 10613,
+                    "c": 540
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.177.54/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 6158,
+                    "c": 360
+                },
+                {
+                    "y": 9100,
+                    "c": 359
+                },
+                {
+                    "y": 9284,
+                    "c": 360
+                },
+                {
+                    "y": 7565,
+                    "c": 360
+                },
+                {
+                    "y": 6229,
+                    "c": 360
+                },
+                {
+                    "y": 8091,
+                    "c": 360
+                },
+                {
+                    "y": 8127,
+                    "c": 360
+                },
+                {
+                    "y": 7312,
+                    "c": 359
+                },
+                {
+                    "y": 6404,
+                    "c": 360
+                },
+                {
+                    "y": 7622,
+                    "c": 360
+                },
+                {
+                    "y": 9350,
+                    "c": 360
+                },
+                {
+                    "y": 7262,
+                    "c": 360
+                },
+                {
+                    "y": 5538,
+                    "c": 360
+                },
+                {
+                    "y": 6858,
+                    "c": 359
+                },
+                {
+                    "y": 7848,
+                    "c": 360
+                },
+                {
+                    "y": 6639,
+                    "c": 360
+                },
+                {
+                    "y": 5825,
+                    "c": 360
+                },
+                {
+                    "y": 6971,
+                    "c": 360
+                },
+                {
+                    "y": 8282,
+                    "c": 359
+                },
+                {
+                    "y": 6978,
+                    "c": 360
+                },
+                {
+                    "y": 5488,
+                    "c": 360
+                },
+                {
+                    "y": 7889,
+                    "c": 360
+                },
+                {
+                    "y": 8821,
+                    "c": 360
+                },
+                {
+                    "y": 7526,
+                    "c": 360
+                },
+                {
+                    "y": 5742,
+                    "c": 359
+                },
+                {
+                    "y": 8402,
+                    "c": 360
+                },
+                {
+                    "y": 9194,
+                    "c": 360
+                },
+                {
+                    "y": 8610,
+                    "c": 360
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.177.54/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatSources/actualPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualPower"
+                },
+                {
+                    "id": "/recordings/heatSources/actualCHPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualCHPower"
+                },
+                {
+                    "id": "/recordings/heatSources/actualDHWPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualDHWPower"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.177.54/heatSources/actualPower"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 185,
+                    "c": 60
+                },
+                {
+                    "y": 494,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 695,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 483,
+                    "c": 60
+                },
+                {
+                    "y": 805,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 825,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 315,
+                    "c": 60
+                },
+                {
+                    "y": 553,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 1424,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                },
+                {
+                    "y": 912,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.177.54/heatSources/actualPower"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 29116,
+                    "c": 1434
+                },
+                {
+                    "y": 18881,
+                    "c": 1439
+                },
+                {
+                    "y": 14369,
+                    "c": 1439
+                },
+                {
+                    "y": 11266,
+                    "c": 1440
+                },
+                {
+                    "y": 17918,
+                    "c": 1439
+                },
+                {
+                    "y": 26790,
+                    "c": 1439
+                },
+                {
+                    "y": 11743,
+                    "c": 1440
+                },
+                {
+                    "y": 13620,
+                    "c": 1439
+                },
+                {
+                    "y": 18412,
+                    "c": 1439
+                },
+                {
+                    "y": 17394,
+                    "c": 1439
+                },
+                {
+                    "y": 10636,
+                    "c": 1440
+                },
+                {
+                    "y": 13161,
+                    "c": 1439
+                },
+                {
+                    "y": 3322,
+                    "c": 358
+                },
+                {
+                    "y": 2377,
+                    "c": 528
+                },
+                {
+                    "y": 1959,
+                    "c": 510
+                },
+                {
+                    "y": 2165,
+                    "c": 190
+                },
+                {
+                    "y": 3444,
+                    "c": 248
+                },
+                {
+                    "y": 3578,
+                    "c": 519
+                },
+                {
+                    "y": 6672,
+                    "c": 1440
+                },
+                {
+                    "y": 12003,
+                    "c": 1439
+                },
+                {
+                    "y": 8850,
+                    "c": 1439
+                },
+                {
+                    "y": 5448,
+                    "c": 1439
+                },
+                {
+                    "y": 5373,
+                    "c": 1440
+                },
+                {
+                    "y": 8187,
+                    "c": 1439
+                },
+                {
+                    "y": 13383,
+                    "c": 1439
+                },
+                {
+                    "y": 6532,
+                    "c": 1439
+                },
+                {
+                    "y": 8035,
+                    "c": 1440
+                },
+                {
+                    "y": 1,
+                    "c": 0
+                },
+                {
+                    "y": 1,
+                    "c": 0
+                },
+                {
+                    "y": 1,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.177.54/heatSources/actualPower"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1348,
+                    "c": 360
+                },
+                {
+                    "y": 2269,
+                    "c": 359
+                },
+                {
+                    "y": 1763,
+                    "c": 360
+                },
+                {
+                    "y": 3468,
+                    "c": 360
+                },
+                {
+                    "y": 1204,
+                    "c": 360
+                },
+                {
+                    "y": 1080,
+                    "c": 360
+                },
+                {
+                    "y": 1121,
+                    "c": 360
+                },
+                {
+                    "y": 2043,
+                    "c": 359
+                },
+                {
+                    "y": 1236,
+                    "c": 360
+                },
+                {
+                    "y": 1531,
+                    "c": 360
+                },
+                {
+                    "y": 1313,
+                    "c": 360
+                },
+                {
+                    "y": 1296,
+                    "c": 360
+                },
+                {
+                    "y": 1278,
+                    "c": 359
+                },
+                {
+                    "y": 2444,
+                    "c": 360
+                },
+                {
+                    "y": 1495,
+                    "c": 360
+                },
+                {
+                    "y": 2970,
+                    "c": 360
+                },
+                {
+                    "y": 1261,
+                    "c": 360
+                },
+                {
+                    "y": 3677,
+                    "c": 360
+                },
+                {
+                    "y": 1812,
+                    "c": 359
+                },
+                {
+                    "y": 6633,
+                    "c": 360
+                },
+                {
+                    "y": 622,
+                    "c": 360
+                },
+                {
+                    "y": 2468,
+                    "c": 360
+                },
+                {
+                    "y": 1422,
+                    "c": 360
+                },
+                {
+                    "y": 2020,
+                    "c": 359
+                },
+                {
+                    "y": 1374,
+                    "c": 360
+                },
+                {
+                    "y": 1288,
+                    "c": 360
+                },
+                {
+                    "y": 1693,
+                    "c": 360
+                },
+                {
+                    "y": 3680,
+                    "c": 360
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.177.54/heatSources/actualPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.177.54/heatSources/actualCHPower"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 183,
+                    "c": 59
+                },
+                {
+                    "y": 505,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 694,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 480,
+                    "c": 60
+                },
+                {
+                    "y": 804,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 823,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 314,
+                    "c": 60
+                },
+                {
+                    "y": 552,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 1424,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                },
+                {
+                    "y": 912,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.177.54/heatSources/actualCHPower"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 29158,
+                    "c": 1434
+                },
+                {
+                    "y": 18810,
+                    "c": 1439
+                },
+                {
+                    "y": 14380,
+                    "c": 1440
+                },
+                {
+                    "y": 11265,
+                    "c": 1439
+                },
+                {
+                    "y": 17938,
+                    "c": 1439
+                },
+                {
+                    "y": 26792,
+                    "c": 1439
+                },
+                {
+                    "y": 11737,
+                    "c": 1440
+                },
+                {
+                    "y": 13548,
+                    "c": 1439
+                },
+                {
+                    "y": 18419,
+                    "c": 1439
+                },
+                {
+                    "y": 17385,
+                    "c": 1439
+                },
+                {
+                    "y": 10582,
+                    "c": 1440
+                },
+                {
+                    "y": 13182,
+                    "c": 1439
+                },
+                {
+                    "y": 9888,
+                    "c": 1378
+                },
+                {
+                    "y": 5025,
+                    "c": 1368
+                },
+                {
+                    "y": 5379,
+                    "c": 1410
+                },
+                {
+                    "y": 5791,
+                    "c": 1329
+                },
+                {
+                    "y": 5989,
+                    "c": 1208
+                },
+                {
+                    "y": 4650,
+                    "c": 1359
+                },
+                {
+                    "y": 6679,
+                    "c": 1440
+                },
+                {
+                    "y": 12005,
+                    "c": 1439
+                },
+                {
+                    "y": 8774,
+                    "c": 1439
+                },
+                {
+                    "y": 5471,
+                    "c": 1439
+                },
+                {
+                    "y": 5483,
+                    "c": 1440
+                },
+                {
+                    "y": 8282,
+                    "c": 1439
+                },
+                {
+                    "y": 13428,
+                    "c": 1439
+                },
+                {
+                    "y": 6532,
+                    "c": 1440
+                },
+                {
+                    "y": 8035,
+                    "c": 1439
+                },
+                {
+                    "y": 1944,
+                    "c": 540
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.177.54/heatSources/actualCHPower"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1348,
+                    "c": 360
+                },
+                {
+                    "y": 2269,
+                    "c": 359
+                },
+                {
+                    "y": 1688,
+                    "c": 360
+                },
+                {
+                    "y": 3469,
+                    "c": 360
+                },
+                {
+                    "y": 1201,
+                    "c": 360
+                },
+                {
+                    "y": 1108,
+                    "c": 360
+                },
+                {
+                    "y": 1120,
+                    "c": 360
+                },
+                {
+                    "y": 2042,
+                    "c": 359
+                },
+                {
+                    "y": 1236,
+                    "c": 360
+                },
+                {
+                    "y": 1567,
+                    "c": 360
+                },
+                {
+                    "y": 1313,
+                    "c": 360
+                },
+                {
+                    "y": 1367,
+                    "c": 360
+                },
+                {
+                    "y": 1278,
+                    "c": 360
+                },
+                {
+                    "y": 2453,
+                    "c": 359
+                },
+                {
+                    "y": 1499,
+                    "c": 360
+                },
+                {
+                    "y": 3052,
+                    "c": 360
+                },
+                {
+                    "y": 1259,
+                    "c": 360
+                },
+                {
+                    "y": 3726,
+                    "c": 360
+                },
+                {
+                    "y": 1809,
+                    "c": 359
+                },
+                {
+                    "y": 6634,
+                    "c": 360
+                },
+                {
+                    "y": 622,
+                    "c": 360
+                },
+                {
+                    "y": 2466,
+                    "c": 360
+                },
+                {
+                    "y": 1420,
+                    "c": 360
+                },
+                {
+                    "y": 2024,
+                    "c": 360
+                },
+                {
+                    "y": 1382,
+                    "c": 359
+                },
+                {
+                    "y": 1284,
+                    "c": 360
+                },
+                {
+                    "y": 1689,
+                    "c": 360
+                },
+                {
+                    "y": 3680,
+                    "c": 360
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.177.54/heatSources/actualCHPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.177.54/heatSources/actualDHWPower"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 183,
+                    "c": 59
+                },
+                {
+                    "y": 505,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 694,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 480,
+                    "c": 60
+                },
+                {
+                    "y": 804,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 823,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 314,
+                    "c": 60
+                },
+                {
+                    "y": 552,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 1424,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                },
+                {
+                    "y": 912,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 672,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.177.54/heatSources/actualDHWPower"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 29142,
+                    "c": 1434
+                },
+                {
+                    "y": 18810,
+                    "c": 1439
+                },
+                {
+                    "y": 14382,
+                    "c": 1440
+                },
+                {
+                    "y": 11257,
+                    "c": 1439
+                },
+                {
+                    "y": 17940,
+                    "c": 1439
+                },
+                {
+                    "y": 26776,
+                    "c": 1439
+                },
+                {
+                    "y": 11737,
+                    "c": 1440
+                },
+                {
+                    "y": 13620,
+                    "c": 1439
+                },
+                {
+                    "y": 18419,
+                    "c": 1439
+                },
+                {
+                    "y": 17385,
+                    "c": 1439
+                },
+                {
+                    "y": 10640,
+                    "c": 1440
+                },
+                {
+                    "y": 13182,
+                    "c": 1439
+                },
+                {
+                    "y": 9886,
+                    "c": 1378
+                },
+                {
+                    "y": 5022,
+                    "c": 1368
+                },
+                {
+                    "y": 5379,
+                    "c": 1410
+                },
+                {
+                    "y": 5791,
+                    "c": 1329
+                },
+                {
+                    "y": 5988,
+                    "c": 1208
+                },
+                {
+                    "y": 4650,
+                    "c": 1359
+                },
+                {
+                    "y": 6680,
+                    "c": 1440
+                },
+                {
+                    "y": 12005,
+                    "c": 1439
+                },
+                {
+                    "y": 8774,
+                    "c": 1439
+                },
+                {
+                    "y": 5472,
+                    "c": 1439
+                },
+                {
+                    "y": 5483,
+                    "c": 1440
+                },
+                {
+                    "y": 8282,
+                    "c": 1439
+                },
+                {
+                    "y": 13428,
+                    "c": 1439
+                },
+                {
+                    "y": 6533,
+                    "c": 1440
+                },
+                {
+                    "y": 8035,
+                    "c": 1439
+                },
+                {
+                    "y": 1944,
+                    "c": 540
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.177.54/heatSources/actualDHWPower"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1348,
+                    "c": 360
+                },
+                {
+                    "y": 2269,
+                    "c": 359
+                },
+                {
+                    "y": 1688,
+                    "c": 360
+                },
+                {
+                    "y": 3469,
+                    "c": 360
+                },
+                {
+                    "y": 1201,
+                    "c": 360
+                },
+                {
+                    "y": 1108,
+                    "c": 360
+                },
+                {
+                    "y": 1120,
+                    "c": 360
+                },
+                {
+                    "y": 2043,
+                    "c": 359
+                },
+                {
+                    "y": 1236,
+                    "c": 360
+                },
+                {
+                    "y": 1567,
+                    "c": 360
+                },
+                {
+                    "y": 1313,
+                    "c": 360
+                },
+                {
+                    "y": 1367,
+                    "c": 360
+                },
+                {
+                    "y": 1278,
+                    "c": 360
+                },
+                {
+                    "y": 2453,
+                    "c": 359
+                },
+                {
+                    "y": 1499,
+                    "c": 360
+                },
+                {
+                    "y": 3052,
+                    "c": 360
+                },
+                {
+                    "y": 1259,
+                    "c": 360
+                },
+                {
+                    "y": 3726,
+                    "c": 360
+                },
+                {
+                    "y": 1809,
+                    "c": 359
+                },
+                {
+                    "y": 6634,
+                    "c": 360
+                },
+                {
+                    "y": 622,
+                    "c": 360
+                },
+                {
+                    "y": 2466,
+                    "c": 360
+                },
+                {
+                    "y": 1420,
+                    "c": 360
+                },
+                {
+                    "y": 2025,
+                    "c": 360
+                },
+                {
+                    "y": 1382,
+                    "c": 359
+                },
+                {
+                    "y": 1284,
+                    "c": 360
+                },
+                {
+                    "y": 1689,
+                    "c": 360
+                },
+                {
+                    "y": 3680,
+                    "c": 360
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.177.54/heatSources/actualDHWPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatingCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatingCircuits/hc1",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits/hc1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatingCircuits/hc1/roomtemperature",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits/hc1/roomtemperature"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-6-27",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.177.54/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-6-27",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 188800,
+                    "c": 59
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                },
+                {
+                    "y": 192000,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-6",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.177.54/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-6",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 4588800,
+                    "c": 1434
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4406400,
+                    "c": 1377
+                },
+                {
+                    "y": 4374400,
+                    "c": 1367
+                },
+                {
+                    "y": 4508800,
+                    "c": 1409
+                },
+                {
+                    "y": 4249600,
+                    "c": 1328
+                },
+                {
+                    "y": 3862400,
+                    "c": 1207
+                },
+                {
+                    "y": 4342400,
+                    "c": 1357
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 4608000,
+                    "c": 1440
+                },
+                {
+                    "y": 4604800,
+                    "c": 1439
+                },
+                {
+                    "y": 1728000,
+                    "c": 540
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-W25",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.177.54/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-W25",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1148800,
+                    "c": 359
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1148800,
+                    "c": 359
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1148800,
+                    "c": 359
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1148800,
+                    "c": 359
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1148800,
+                    "c": 359
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                },
+                {
+                    "y": 1152000,
+                    "c": 360
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature",
+            "type": "yRecording",
+            "writeable": 2,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.177.54/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
 ]

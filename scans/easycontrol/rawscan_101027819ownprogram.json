@@ -50,7 +50,7 @@
             "used": "true",
             "available": "true",
             "infoText": "",
-            "value": "high"
+            "value": "ownprogram"
         },
         {
             "id": "/dhwCircuits/dhw1/programs",
@@ -225,7 +225,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "on"
+            "value": "off"
         },
         {
             "id": "/dhwCircuits/dhw1/temperatureLevels",
@@ -281,7 +281,7 @@
             "recordable": 0,
             "used": "true",
             "available": "true",
-            "value": "off"
+            "value": "on"
         },
         {
             "id": "/dhwCircuits/dhw1/thermalDisinfect/time",
@@ -401,7 +401,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "2021-04-13T20:35:05+02:00 Tu"
+            "value": "2021-04-16T09:53:53+02:00 Fr"
         },
         {
             "id": "/gateway/brand",
@@ -464,7 +464,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 0.0,
+            "value": 50.0,
             "unitOfMeasure": "",
             "minValue": 0.0,
             "maxValue": 100.0,
@@ -498,7 +498,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "2.6.14"
+            "value": "\u06edx"
         },
         {
             "id": "/gateway/hmip/versionOS",
@@ -523,7 +523,7 @@
             "recordable": 0,
             "used": "true",
             "available": "true",
-            "value": "7JYuGusQgJjB5LEB"
+            "value": "-1"
         },
         {
             "id": "/gateway/installer",
@@ -648,14 +648,14 @@
             "writeable": 0,
             "used": "true",
             "recordable": 0,
-            "value": "oGyo4YXrbN4/oqrVb+caJOGV"
+            "value": "-1"
         },
         {
             "id": "/gateway/serialnumber",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "05788177218818737906739"
+            "value": "-1"
         },
         {
             "id": "/gateway/test",
@@ -780,6 +780,21 @@
             "recordable": 0,
             "value": [
                 {
+                    "time": "2021-04-16T00:00:56+02:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-15T00:00:54+02:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-14T00:00:33+02:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
                     "time": "2021-04-13T00:00:32+02:00",
                     "level": "info",
                     "message": "ENERGY_MONITOR: dt24 is active"
@@ -813,21 +828,6 @@
                     "time": "2021-04-07T02:56:09+02:00",
                     "level": "error",
                     "message": "UPDTR-CHK: Invalid firmware type"
-                },
-                {
-                    "time": "2021-04-07T00:00:35+02:00",
-                    "level": "info",
-                    "message": "ENERGY_MONITOR: dt24 is active"
-                },
-                {
-                    "time": "2021-04-06T00:00:34+02:00",
-                    "level": "info",
-                    "message": "ENERGY_MONITOR: dt24 is active"
-                },
-                {
-                    "time": "2021-04-05T00:00:33+02:00",
-                    "level": "info",
-                    "message": "ENERGY_MONITOR: dt24 is active"
                 }
             ]
         },
@@ -836,7 +836,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 80.2,
+            "value": 80.7,
             "unitOfMeasure": "mA",
             "minValue": 0.0,
             "maxValue": 1000.0,
@@ -931,7 +931,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 0,
-            "value": 22.9,
+            "value": 22.0,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 90.0,
@@ -1009,7 +1009,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "2021-04-13T20:35:09+02:00 Tu"
+            "value": "2021-04-16T09:53:57+02:00 Fr"
         },
         {
             "id": "/gateway/test/zigbeeReceiveCounter",
@@ -1061,14 +1061,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "2021-04-11T23:10:30+02:00 Su"
+            "value": "2021-04-14T09:52:53+02:00 We"
         },
         {
             "id": "/gateway/time/current",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "2021-04-13T20:35:09+02:00 Tu"
+            "value": "2021-04-16T09:53:58+02:00 Fr"
         },
         {
             "id": "/gateway/time/startup",
@@ -1082,7 +1082,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "2021-04-07T02:56:02+02:00 We"
+            "value": "2021-04-14T09:52:51+02:00 We"
         },
         {
             "id": "/gateway/time/timeZone",
@@ -1125,7 +1125,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 0.0,
+            "value": 10.0,
             "unitOfMeasure": "%",
             "minValue": 0.0,
             "maxValue": 100.0,
@@ -1138,8 +1138,8 @@
             "recordable": 0,
             "value": [
                 "",
-                "",
-                "",
+                "ch on",
+                "dhw off",
                 ""
             ]
         },
@@ -1180,7 +1180,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "2021-04-13T14:55:43+02:00 Tu"
+            "value": "2021-04-15T18:55:46+02:00 Th"
         },
         {
             "id": "/gateway/update/lastUpdate",
@@ -1226,7 +1226,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": ""
+            "value": "-1"
         },
         {
             "id": "/gateway/user/name",
@@ -1240,7 +1240,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": ""
+            "value": "-1"
         },
         {
             "id": "/gateway/uuid",
@@ -1290,7 +1290,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": -36,
+            "value": -35,
             "unitOfMeasure": "dB",
             "minValue": -32768.0,
             "maxValue": 100.0,
@@ -1536,7 +1536,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 34.0,
+            "value": 54.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "C",
@@ -1613,7 +1613,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 0.0,
+            "value": 29.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "%",
@@ -1626,7 +1626,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 35.2,
+            "value": 57.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "C",
@@ -1663,7 +1663,7 @@
             "recordable": 0,
             "used": "true",
             "available": "true",
-            "value": "off"
+            "value": "ch"
         },
         {
             "id": "/heatSources/info",
@@ -1686,7 +1686,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 15515.0,
+            "value": 15633.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "",
@@ -1790,7 +1790,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 204.0,
+            "value": 200.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "",
@@ -1944,7 +1944,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 0,
-            "value": 19.0,
+            "value": 19.5,
             "unitOfMeasure": "C",
             "minValue": 5.0,
             "maxValue": 30.0,
@@ -2046,17 +2046,14 @@
             "type": "stringArray",
             "writeable": 1,
             "recordable": 0,
-            "value": [
-                "45.9514433",
-                "4.9851233"
-            ]
+            "value": "-1"
         },
         {
             "id": "/system/location/localization",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "de"
+            "value": "-1"
         },
         {
             "id": "/system/sensors",
@@ -2084,7 +2081,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 22.3,
+            "value": 25.5,
             "unitOfMeasure": "%",
             "minValue": 0.0,
             "maxValue": 100.0,
@@ -2116,7 +2113,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 27.9,
+            "value": 26.9,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 90.0,
@@ -2127,7 +2124,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 37.8,
+            "value": 38.0,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 90.0,
@@ -2160,7 +2157,7 @@
             "type": "floatValue",
             "recordable": 0,
             "writeable": 0,
-            "value": 9.0,
+            "value": 6.0,
             "unitOfMeasure": "C",
             "status": "ok",
             "srcType": "virtual",
@@ -2250,7 +2247,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "RWFzeUNvbnRyb2w="
+            "value": "EasyControl"
         },
         {
             "id": "/devices/device1/protocol",
@@ -2368,7 +2365,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "4oKs"
+            "value": "\u20ac"
         },
         {
             "id": "/energy/electricity",
@@ -2681,7 +2678,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 147.0,
+            "value": 150.0,
             "used": "true",
             "available": "true",
             "unitOfMeasure": "",
@@ -2728,7 +2725,681 @@
             "stepSize": 1e-05
         }
     ],
-    [],
+    [
+        {
+            "id": "/events",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/events/list1"
+                },
+                {
+                    "id": "/events/list2"
+                },
+                {
+                    "id": "/events/list3"
+                }
+            ]
+        },
+        {
+            "id": "/events/list1",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        },
+        {
+            "id": "/events/list2",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        },
+        {
+            "id": "/events/list3",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        }
+    ],
+    [
+        {
+            "id": "/programs",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/programs/list"
+                },
+                {
+                    "id": "/programs/pg1"
+                },
+                {
+                    "id": "/programs/pg2"
+                }
+            ]
+        },
+        {
+            "id": "/programs/list",
+            "type": "programArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "id": 1,
+                    "name": "QSBsYSBtYWlzb24="
+                },
+                {
+                    "id": 2,
+                    "name": "VHJhdmFpbA=="
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/programs/pg1/friday"
+                },
+                {
+                    "id": "/programs/pg1/monday"
+                },
+                {
+                    "id": "/programs/pg1/name"
+                },
+                {
+                    "id": "/programs/pg1/saturday"
+                },
+                {
+                    "id": "/programs/pg1/sunday"
+                },
+                {
+                    "id": "/programs/pg1/thursday"
+                },
+                {
+                    "id": "/programs/pg1/tuesday"
+                },
+                {
+                    "id": "/programs/pg1/wednesday"
+                },
+                {
+                    "id": "/programs/pg1/week"
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/friday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/monday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "A la maison"
+        },
+        {
+            "id": "/programs/pg1/saturday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 405,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/sunday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 405,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/thursday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/tuesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/wednesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/week",
+            "type": "weekProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "d": "Su",
+                    "t": 405,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Su",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 405,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/programs/pg2/friday"
+                },
+                {
+                    "id": "/programs/pg2/monday"
+                },
+                {
+                    "id": "/programs/pg2/name"
+                },
+                {
+                    "id": "/programs/pg2/saturday"
+                },
+                {
+                    "id": "/programs/pg2/sunday"
+                },
+                {
+                    "id": "/programs/pg2/thursday"
+                },
+                {
+                    "id": "/programs/pg2/tuesday"
+                },
+                {
+                    "id": "/programs/pg2/wednesday"
+                },
+                {
+                    "id": "/programs/pg2/week"
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/friday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/monday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Travail"
+        },
+        {
+            "id": "/programs/pg2/saturday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/sunday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/thursday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/tuesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/wednesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg2/week",
+            "type": "weekProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "d": "Su",
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Su",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 390,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 480,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 960,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 1380,
+                    "Th": 19.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 395,
+                    "Th": 23.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 1350,
+                    "Th": 19.0,
+                    "name": 0
+                }
+            ]
+        }
+    ],
     [
         {
             "id": "/zones",
@@ -2772,7 +3443,7 @@
                     "name": "TGUgU8Opam91cg==",
                     "icon": "living room",
                     "program": 1,
-                    "temp": 22.9,
+                    "temp": 22,
                     "status": "heat request"
                 }
             ]
@@ -2854,7 +3525,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 0,
-            "value": 0.0,
+            "value": 23.0,
             "unitOfMeasure": "C",
             "minValue": 0.0,
             "maxValue": 30.0,
@@ -2904,7 +3575,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "TGUgU8Opam91cg=="
+            "value": "Le S\u00e9jour"
         },
         {
             "id": "/zones/zn1/nextSetpoint",
@@ -2948,7 +3619,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 22.9,
+            "value": 22.0,
             "used": "true",
             "unitOfMeasure": "C",
             "minValue": 5.0,
@@ -2972,7 +3643,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 114.0,
+            "value": 755.0,
             "used": "true",
             "unitOfMeasure": "mins",
             "minValue": 0.0,

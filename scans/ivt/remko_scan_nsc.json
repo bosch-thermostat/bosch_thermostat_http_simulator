@@ -1,0 +1,5803 @@
+[
+    [
+        {
+            "id": "/dhwCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/operationMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/operationMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/switchPrograms",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/switchPrograms"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/currentSetpoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/currentSetpoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/actualTemp",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/waterFlow",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/waterFlow"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/workingTime",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/workingTime"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/charge",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/charge"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/chargeDuration",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/chargeDuration"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/tdMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/tdMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/tdsetPoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/tdsetPoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/cpStartph",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/cpStartph"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/singleChargeSetpoint",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/singleChargeSetpoint"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/holidayMode",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/holidayMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/status",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/status"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "ownprogram",
+            "allowedValues": [
+                "Off",
+                "high",
+                "HCprogram",
+                "ownprogram"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/switchPrograms",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/switchPrograms/A",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/switchPrograms/A"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/switchPrograms/A",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/dhwCircuits/dhw1/temperatureLevels",
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 42,
+            "maxNbOfSwitchPointsPerDay": 6,
+            "switchPointTimeRaster": 15,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "high",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "high",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "high",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "high",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "high",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "high",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "high",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "off",
+                    "time": 1380
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/off",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/off"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/high",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels/high"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/off",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/high",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "C",
+            "minValue": 30.0,
+            "maxValue": 80.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/currentSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/actualTemp",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 52.7,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/waterFlow",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "l/min"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/workingTime",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 53020,
+            "unitOfMeasure": "mins"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/charge",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "stop",
+            "allowedValues": [
+                "stop",
+                "start"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/chargeDuration",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "mins",
+            "minValue": 15.0,
+            "maxValue": 2880.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/singleChargeSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "C",
+            "minValue": 30.0,
+            "maxValue": 80.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/holidayMode",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/holidayMode/activated"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/holidayMode/activated",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "",
+            "allowedValues": [
+                "",
+                "hm1",
+                "hm2",
+                "hm3",
+                "hm4",
+                "hm5"
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ACTIVE",
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/gateway",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/uuid",
+                    "uri": "http://THERMOSTAT/gateway/uuid"
+                },
+                {
+                    "id": "/gateway/firmware",
+                    "uri": "http://THERMOSTAT/gateway/firmware"
+                },
+                {
+                    "id": "/gateway/userpassword",
+                    "uri": "http://THERMOSTAT/gateway/userpassword"
+                },
+                {
+                    "id": "/gateway/versionFirmware",
+                    "uri": "http://THERMOSTAT/gateway/versionFirmware"
+                },
+                {
+                    "id": "/gateway/versionHardware",
+                    "uri": "http://THERMOSTAT/gateway/versionHardware"
+                },
+                {
+                    "id": "/gateway/boschSHPassword",
+                    "uri": "http://THERMOSTAT/gateway/boschSHPassword"
+                },
+                {
+                    "id": "/gateway/portalPassword",
+                    "uri": "http://THERMOSTAT/gateway/portalPassword"
+                },
+                {
+                    "id": "/gateway/knxPassword",
+                    "uri": "http://THERMOSTAT/gateway/knxPassword"
+                },
+                {
+                    "id": "/gateway/haiPassword",
+                    "uri": "http://THERMOSTAT/gateway/haiPassword"
+                },
+                {
+                    "id": "/gateway/DateTime",
+                    "uri": "http://THERMOSTAT/gateway/DateTime"
+                },
+                {
+                    "id": "/gateway/instPassword",
+                    "uri": "http://THERMOSTAT/gateway/instPassword"
+                },
+                {
+                    "id": "/gateway/instAccess",
+                    "uri": "http://THERMOSTAT/gateway/instAccess"
+                },
+                {
+                    "id": "/gateway/instWriteAccess",
+                    "uri": "http://THERMOSTAT/gateway/instWriteAccess"
+                },
+                {
+                    "id": "/gateway/version",
+                    "uri": "http://THERMOSTAT/gateway/version"
+                },
+                {
+                    "id": "/gateway/update",
+                    "uri": "http://THERMOSTAT/gateway/update"
+                },
+                {
+                    "id": "/gateway/logging",
+                    "uri": "http://THERMOSTAT/gateway/logging"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/uuid",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "-1",
+            "allowedValues": [
+                "-1"
+            ]
+        },
+        {
+            "id": "/gateway/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "04.07.07"
+        },
+        {
+            "id": "/gateway/versionHardware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "iCom_Low_NSC_v1"
+        },
+        {
+            "id": "/gateway/DateTime",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2021-08-12T18:45:14"
+        },
+        {
+            "id": "/gateway/instAccess",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "off",
+            "allowedValues": [
+                "off",
+                "on"
+            ]
+        },
+        {
+            "id": "/gateway/instWriteAccess",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "off",
+            "allowedValues": [
+                "off",
+                "on"
+            ]
+        },
+        {
+            "id": "/gateway/update",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/update/version",
+                    "uri": "http://THERMOSTAT/gateway/update/version"
+                },
+                {
+                    "id": "/gateway/update/request",
+                    "uri": "http://THERMOSTAT/gateway/update/request"
+                },
+                {
+                    "id": "/gateway/update/strategy",
+                    "uri": "http://THERMOSTAT/gateway/update/strategy"
+                },
+                {
+                    "id": "/gateway/update/status",
+                    "uri": "http://THERMOSTAT/gateway/update/status"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/update/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "completed",
+            "allowedValues": [
+                "inprogress",
+                "completed",
+                "interrupted"
+            ]
+        },
+        {
+            "id": "/gateway/logging",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/logging/switch",
+                    "uri": "http://THERMOSTAT/gateway/logging/switch"
+                },
+                {
+                    "id": "/gateway/logging/reqBusVar",
+                    "uri": "http://THERMOSTAT/gateway/logging/reqBusVar"
+                },
+                {
+                    "id": "/gateway/logging/userAcceptance",
+                    "uri": "http://THERMOSTAT/gateway/logging/userAcceptance"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/logging/userAcceptance",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "false",
+            "allowedValues": [
+                "false",
+                "true"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/currentRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/actualSupplyTemperature"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/operationMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/operationMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/manualRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/manualRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temporaryRoomSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temporaryRoomSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/roomtemperature",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/activeSwitchProgram",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/activeSwitchProgram"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/timeToNextSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/timeToNextSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/nextSetpoint",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/nextSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchProgramMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchProgramMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/pumpModulation",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/pumpModulation"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatCurveMax",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/heatCurveMax"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/controlType",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/controlType"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/setpointOptimization",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/setpointOptimization"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/currentOpModeInfo",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentOpModeInfo"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/cooling",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/cooling"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/currentSuWiMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/currentSuWiMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/status",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/status"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/currentRoomSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 15.0,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/actualSupplyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 58.4,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "manual",
+            "allowedValues": [
+                "auto",
+                "manual"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureRoomSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 15.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "off_heat": 0.0
+                },
+                {
+                    "off_cool": 90.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/manualRoomSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 15.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temporaryRoomSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": -1.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "state": [
+                {
+                    "off": 0.0
+                },
+                {
+                    "na": -1.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/roomtemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 22.1,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/activeSwitchProgram",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "A",
+            "allowedValues": [
+                "A",
+                "B"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchProgramMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "levels",
+            "allowedValues": [
+                "levels",
+                "absolute"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/A",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/A"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/switchPrograms/B",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/switchPrograms/B"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/A",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 42,
+            "maxNbOfSwitchPointsPerDay": 6,
+            "switchPointTimeRaster": 15,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 540
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 1020
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 1260
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 540
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 1020
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 1260
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 540
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 1020
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 1260
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 540
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 1020
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 1260
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 330
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 540
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 1020
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 1260
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "comfort2",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "eco",
+                    "time": 1320
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "comfort2",
+                    "time": 390
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "eco",
+                    "time": 1320
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/switchPrograms/B",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/heatingCircuits/hc1/temperatureLevels",
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 42,
+            "maxNbOfSwitchPointsPerDay": 6,
+            "switchPointTimeRaster": 15,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "comfort2",
+                    "time": 960
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "comfort2",
+                    "time": 960
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "comfort2",
+                    "time": 960
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "comfort2",
+                    "time": 960
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 360
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "comfort2",
+                    "time": 960
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "eco",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "comfort2",
+                    "time": 480
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "eco",
+                    "time": 1380
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels/eco",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels/eco"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/temperatureLevels/comfort2",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/temperatureLevels/comfort2"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/eco",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 15.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 22.5,
+            "state": [
+                {
+                    "off": 0.0
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/comfort2",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 23.0,
+            "unitOfMeasure": "C",
+            "minValue": 15.5,
+            "maxValue": 30.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/pumpModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatingCircuits/hc1/cooling",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatingCircuits/hc1/currentSuWiMode",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "forced",
+            "allowedValues": [
+                "off",
+                "forced",
+                "cooling"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/holidayMode/activated",
+                    "uri": "http://THERMOSTAT/heatingCircuits/hc1/holidayMode/activated"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/holidayMode/activated",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "",
+            "allowedValues": [
+                "",
+                "hm1",
+                "hm2",
+                "hm3",
+                "hm4",
+                "hm5"
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ACTIVE",
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/heatSources",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/info",
+                    "uri": "http://THERMOSTAT/heatSources/info"
+                },
+                {
+                    "id": "/heatSources/actualPower",
+                    "uri": "http://THERMOSTAT/heatSources/actualPower"
+                },
+                {
+                    "id": "/heatSources/actualCHPower",
+                    "uri": "http://THERMOSTAT/heatSources/actualCHPower"
+                },
+                {
+                    "id": "/heatSources/actualDHWPower",
+                    "uri": "http://THERMOSTAT/heatSources/actualDHWPower"
+                },
+                {
+                    "id": "/heatSources/actualModulation",
+                    "uri": "http://THERMOSTAT/heatSources/actualModulation"
+                },
+                {
+                    "id": "/heatSources/burnerModulationSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/burnerModulationSetpoint"
+                },
+                {
+                    "id": "/heatSources/burnerPowerSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/burnerPowerSetpoint"
+                },
+                {
+                    "id": "/heatSources/flameStatus",
+                    "uri": "http://THERMOSTAT/heatSources/flameStatus"
+                },
+                {
+                    "id": "/heatSources/CHpumpModulation",
+                    "uri": "http://THERMOSTAT/heatSources/CHpumpModulation"
+                },
+                {
+                    "id": "/heatSources/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/actualSupplyTemperature"
+                },
+                {
+                    "id": "/heatSources/powerSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/powerSetpoint"
+                },
+                {
+                    "id": "/heatSources/gasAirPressure",
+                    "uri": "http://THERMOSTAT/heatSources/gasAirPressure"
+                },
+                {
+                    "id": "/heatSources/systemPressure",
+                    "uri": "http://THERMOSTAT/heatSources/systemPressure"
+                },
+                {
+                    "id": "/heatSources/ChimneySweeper",
+                    "uri": "http://THERMOSTAT/heatSources/ChimneySweeper"
+                },
+                {
+                    "id": "/heatSources/returnTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/returnTemperature"
+                },
+                {
+                    "id": "/heatSources/numberOfStarts",
+                    "uri": "http://THERMOSTAT/heatSources/numberOfStarts"
+                },
+                {
+                    "id": "/heatSources/supplyTemperatureSetpoint",
+                    "uri": "http://THERMOSTAT/heatSources/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatSources/applianceSupplyTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/applianceSupplyTemperature"
+                },
+                {
+                    "id": "/heatSources/nominalCHPower",
+                    "uri": "http://THERMOSTAT/heatSources/nominalCHPower"
+                },
+                {
+                    "id": "/heatSources/nominalDHWPower",
+                    "uri": "http://THERMOSTAT/heatSources/nominalDHWPower"
+                },
+                {
+                    "id": "/heatSources/chimneyTemperature",
+                    "uri": "http://THERMOSTAT/heatSources/chimneyTemperature"
+                },
+                {
+                    "id": "/heatSources/sensors",
+                    "uri": "http://THERMOSTAT/heatSources/sensors"
+                },
+                {
+                    "id": "/heatSources/workingTime",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime"
+                },
+                {
+                    "id": "/heatSources/fuelCell",
+                    "uri": "http://THERMOSTAT/heatSources/fuelCell"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring"
+                },
+                {
+                    "id": "/heatSources/hs1",
+                    "uri": "http://THERMOSTAT/heatSources/hs1"
+                },
+                {
+                    "id": "/heatSources/ch",
+                    "uri": "http://THERMOSTAT/heatSources/ch"
+                },
+                {
+                    "id": "/heatSources/dhw",
+                    "uri": "http://THERMOSTAT/heatSources/dhw"
+                },
+                {
+                    "id": "/heatSources/pool",
+                    "uri": "http://THERMOSTAT/heatSources/pool"
+                },
+                {
+                    "id": "/heatSources/total",
+                    "uri": "http://THERMOSTAT/heatSources/total"
+                },
+                {
+                    "id": "/heatSources/electricGrid",
+                    "uri": "http://THERMOSTAT/heatSources/electricGrid"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/info",
+            "type": "systeminfo",
+            "recordable": 0,
+            "writeable": 0,
+            "values": [
+                {
+                    "Tok": "8",
+                    "Id": "1159",
+                    "Ver": "06",
+                    "No": "202020203539343036323030313030343937373136373031343131"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/actualPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 0.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/actualCHPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 0.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/actualDHWPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 0.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/actualModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatSources/burnerModulationSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatSources/burnerPowerSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/flameStatus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "off",
+            "allowedValues": [
+                "off",
+                "on"
+            ]
+        },
+        {
+            "id": "/heatSources/CHpumpModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatSources/actualSupplyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 58.3,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/powerSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatSources/gasAirPressure",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "Pascal"
+        },
+        {
+            "id": "/heatSources/systemPressure",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 25.5,
+            "unitOfMeasure": "bar",
+            "state": [
+                {
+                    "invalid": 25.5
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/ChimneySweeper",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "off"
+        },
+        {
+            "id": "/heatSources/returnTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 36.9,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/numberOfStarts",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 66025,
+            "unitOfMeasure": " "
+        },
+        {
+            "id": "/heatSources/supplyTemperatureSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 5.0,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/heatSources/applianceSupplyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 58.3,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/nominalCHPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 24.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/nominalDHWPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 30.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/chimneyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": -3276.8,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/sensors",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/workingTime",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/workingTime/totalSystem",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/totalSystem"
+                },
+                {
+                    "id": "/heatSources/workingTime/secondBurner",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/secondBurner"
+                },
+                {
+                    "id": "/heatSources/workingTime/centralHeating",
+                    "uri": "http://THERMOSTAT/heatSources/workingTime/centralHeating"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/workingTime/totalSystem",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 299325,
+            "unitOfMeasure": "mins"
+        },
+        {
+            "id": "/heatSources/workingTime/secondBurner",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0,
+            "unitOfMeasure": "mins"
+        },
+        {
+            "id": "/heatSources/workingTime/centralHeating",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 246305,
+            "unitOfMeasure": "mins"
+        },
+        {
+            "id": "/heatSources/fuelCell",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/energyMonitoring",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/energyMonitoring/consumption",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/consumption"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/correctionFactor",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/correctionFactor"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/maxTankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/maxTankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/minTankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/minTankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/tankLevel",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/tankLevel"
+                },
+                {
+                    "id": "/heatSources/energyMonitoring/startDateTime",
+                    "uri": "http://THERMOSTAT/heatSources/energyMonitoring/startDateTime"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/energyMonitoring/consumption",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 5714529.5,
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 135780000.0
+        },
+        {
+            "id": "/heatSources/energyMonitoring/correctionFactor",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1.0,
+            "unitOfMeasure": " ",
+            "minValue": 0.7,
+            "maxValue": 1.3
+        },
+        {
+            "id": "/heatSources/energyMonitoring/maxTankLevel",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 135780000.0
+        },
+        {
+            "id": "/heatSources/energyMonitoring/minTankLevel",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 135780000.0
+        },
+        {
+            "id": "/heatSources/energyMonitoring/tankLevel",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 135780000.0
+        },
+        {
+            "id": "/heatSources/energyMonitoring/startDateTime",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-08-12T00:41:03"
+        },
+        {
+            "id": "/heatSources/hs1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/hs1/info",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/info"
+                },
+                {
+                    "id": "/heatSources/hs1/type",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/type"
+                },
+                {
+                    "id": "/heatSources/hs1/actualModulation",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/actualModulation"
+                },
+                {
+                    "id": "/heatSources/hs1/actualPower",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/actualPower"
+                },
+                {
+                    "id": "/heatSources/hs1/flameStatus",
+                    "uri": "http://THERMOSTAT/heatSources/hs1/flameStatus"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/hs1/info",
+            "type": "systeminfo",
+            "recordable": 0,
+            "writeable": 0,
+            "values": [
+                {
+                    "Tok": "8",
+                    "Id": "1159",
+                    "Ver": "06",
+                    "No": "202020203539343036323030313030343937373136373031343131"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/hs1/type",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "GasBoiler",
+            "allowedValues": [
+                "No_Appliance",
+                "OilBoiler",
+                "GasBoiler",
+                "Heatpump",
+                "unknownBoiler"
+            ]
+        },
+        {
+            "id": "/heatSources/hs1/actualModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%"
+        },
+        {
+            "id": "/heatSources/hs1/actualPower",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 0.0,
+            "unitOfMeasure": "kW"
+        },
+        {
+            "id": "/heatSources/hs1/flameStatus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "off",
+            "allowedValues": [
+                "off",
+                "on"
+            ]
+        },
+        {
+            "id": "/heatSources/ch",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/ch/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/ch/energyMonitoring"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/ch/energyMonitoring",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/dhw",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/dhw/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/dhw/energyMonitoring"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/dhw/energyMonitoring",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/pool",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/pool/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/pool/energyMonitoring"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/pool/energyMonitoring",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/total",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/total/energyMonitoring",
+                    "uri": "http://THERMOSTAT/heatSources/total/energyMonitoring"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/total/energyMonitoring",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/heatSources/electricGrid",
+            "type": "refEnum",
+            "references": []
+        }
+    ],
+    [
+        {
+            "id": "/notifications",
+            "type": "errorList",
+            "recordable": 0,
+            "writeable": 0,
+            "values": []
+        }
+    ],
+    [
+        {
+            "id": "/system",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/brand",
+                    "uri": "http://THERMOSTAT/system/brand"
+                },
+                {
+                    "id": "/system/systemType",
+                    "uri": "http://THERMOSTAT/system/systemType"
+                },
+                {
+                    "id": "/system/bus",
+                    "uri": "http://THERMOSTAT/system/bus"
+                },
+                {
+                    "id": "/system/busReq",
+                    "uri": "http://THERMOSTAT/system/busReq"
+                },
+                {
+                    "id": "/system/info",
+                    "uri": "http://THERMOSTAT/system/info"
+                },
+                {
+                    "id": "/system/minOutdoorTemp",
+                    "uri": "http://THERMOSTAT/system/minOutdoorTemp"
+                },
+                {
+                    "id": "/system/healthStatus",
+                    "uri": "http://THERMOSTAT/system/healthStatus"
+                },
+                {
+                    "id": "/system/sensors",
+                    "uri": "http://THERMOSTAT/system/sensors"
+                },
+                {
+                    "id": "/system/appliance",
+                    "uri": "http://THERMOSTAT/system/appliance"
+                },
+                {
+                    "id": "/system/holidayModes",
+                    "uri": "http://THERMOSTAT/system/holidayModes"
+                }
+            ]
+        },
+        {
+            "id": "/system/brand",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "Buderus",
+            "allowedValues": [
+                "unknown",
+                "Bosch",
+                "Junkers",
+                "Buderus",
+                "Nefit",
+                "Sieger",
+                "Tata",
+                "Dakon",
+                "Elm",
+                "Boulter",
+                "Vulcano",
+                "Worcester",
+                "British Gas",
+                "IVT",
+                "Geminox",
+                "Neckar",
+                "Zeus",
+                "Milton"
+            ]
+        },
+        {
+            "id": "/system/systemType",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "NSC_ICOM_GATEWAY",
+            "allowedValues": [
+                "NSC_ICOM_GATEWAY"
+            ]
+        },
+        {
+            "id": "/system/bus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "EMS2_0",
+            "allowedValues": [
+                "No_Bus",
+                "EMS1_0",
+                "EMS2_0",
+                "CAN"
+            ]
+        },
+        {
+            "id": "/system/info",
+            "type": "systeminfo",
+            "recordable": 0,
+            "writeable": 0,
+            "values": [
+                {
+                    "Tok": "8",
+                    "Id": "123",
+                    "Ver": "04.09",
+                    "No": "383733373931323330413031313631313038303300FFFFFFFFFFFF"
+                },
+                {
+                    "Tok": "16",
+                    "Id": "158",
+                    "Ver": "NF11.09",
+                    "No": "323533303631383130393630373737333831313131313300FFFFFF"
+                },
+                {
+                    "Tok": "9",
+                    "Id": "125",
+                    "Ver": "NF01.06",
+                    "No": ""
+                }
+            ]
+        },
+        {
+            "id": "/system/minOutdoorTemp",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": -10.0,
+            "unitOfMeasure": "C",
+            "minValue": -35.0,
+            "maxValue": 10.0
+        },
+        {
+            "id": "/system/healthStatus",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ok",
+            "allowedValues": [
+                "error",
+                "maintenance",
+                "ok"
+            ]
+        },
+        {
+            "id": "/system/sensors",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/temperatures",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/temperatures/outdoor_t1",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
+                },
+                {
+                    "id": "/system/sensors/temperatures/supply_t1_setpoint",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/supply_t1_setpoint"
+                },
+                {
+                    "id": "/system/sensors/temperatures/supply_t1",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/supply_t1"
+                },
+                {
+                    "id": "/system/sensors/temperatures/hotWater_t2",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/hotWater_t2"
+                },
+                {
+                    "id": "/system/sensors/temperatures/return",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/return"
+                },
+                {
+                    "id": "/system/sensors/temperatures/switch",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/switch"
+                },
+                {
+                    "id": "/system/sensors/temperatures/chimney",
+                    "uri": "http://THERMOSTAT/system/sensors/temperatures/chimney"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/outdoor_t1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": -3276.8,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/supply_t1_setpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 5.0,
+            "unitOfMeasure": "C"
+        },
+        {
+            "id": "/system/sensors/temperatures/supply_t1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 58.3,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/hotWater_t2",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 52.7,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/return",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 36.8,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/switch",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": -3276.8,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/chimney",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": -3276.8,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/appliance",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/appliance/actualSupplyTemperature",
+                    "uri": "http://THERMOSTAT/system/appliance/actualSupplyTemperature"
+                }
+            ]
+        },
+        {
+            "id": "/system/appliance/actualSupplyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 58.3,
+            "unitOfMeasure": "C",
+            "state": [
+                {
+                    "open": -3276.8
+                },
+                {
+                    "short": 3276.7
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm1",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1"
+                },
+                {
+                    "id": "/system/holidayModes/hm2",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2"
+                },
+                {
+                    "id": "/system/holidayModes/hm3",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3"
+                },
+                {
+                    "id": "/system/holidayModes/hm4",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4"
+                },
+                {
+                    "id": "/system/holidayModes/hm5",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm1/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm1/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm1/delete"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm1/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2009-01-01/2009-01-01"
+        },
+        {
+            "id": "/system/holidayModes/hm1/assignedTo",
+            "type": "arrayData",
+            "writeable": 1,
+            "recordable": 0,
+            "values": [],
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm1/hcMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "AUTO_SAT",
+                "FIX_TEMP",
+                "OFF",
+                "ECO"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm1/dhwMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm2",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm2/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm2/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm2/delete"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm2/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2009-01-01/2009-01-01"
+        },
+        {
+            "id": "/system/holidayModes/hm2/assignedTo",
+            "type": "arrayData",
+            "writeable": 1,
+            "recordable": 0,
+            "values": [],
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm2/hcMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "ECO",
+            "allowedValues": [
+                "AUTO_SAT",
+                "FIX_TEMP",
+                "OFF",
+                "ECO"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm2/dhwMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm3",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm3/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm3/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm3/delete"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm3/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2009-01-01/2009-01-01"
+        },
+        {
+            "id": "/system/holidayModes/hm3/assignedTo",
+            "type": "arrayData",
+            "writeable": 1,
+            "recordable": 0,
+            "values": [],
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm3/hcMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "ECO",
+            "allowedValues": [
+                "AUTO_SAT",
+                "FIX_TEMP",
+                "OFF",
+                "ECO"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm3/dhwMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm4",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm4/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm4/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm4/delete"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm4/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2009-01-01/2009-01-01"
+        },
+        {
+            "id": "/system/holidayModes/hm4/assignedTo",
+            "type": "arrayData",
+            "writeable": 1,
+            "recordable": 0,
+            "values": [],
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm4/hcMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "ECO",
+            "allowedValues": [
+                "AUTO_SAT",
+                "FIX_TEMP",
+                "OFF",
+                "ECO"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm4/dhwMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm5",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/holidayModes/hm5/startStop",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/startStop"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/assignedTo",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/assignedTo"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/hcMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/hcMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/dhwMode",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/dhwMode"
+                },
+                {
+                    "id": "/system/holidayModes/hm5/delete",
+                    "uri": "http://THERMOSTAT/system/holidayModes/hm5/delete"
+                }
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm5/startStop",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2009-01-01/2009-01-01"
+        },
+        {
+            "id": "/system/holidayModes/hm5/assignedTo",
+            "type": "arrayData",
+            "writeable": 1,
+            "recordable": 0,
+            "values": [],
+            "allowedValues": [
+                "hc1",
+                "hc2",
+                "hc3",
+                "hc4",
+                "dhw1",
+                "dhw2"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm5/hcMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "ECO",
+            "allowedValues": [
+                "AUTO_SAT",
+                "FIX_TEMP",
+                "OFF",
+                "ECO"
+            ]
+        },
+        {
+            "id": "/system/holidayModes/hm5/dhwMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "OFF",
+            "allowedValues": [
+                "OFF",
+                "TD_OFF"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/solarCircuits",
+            "type": "refEnum",
+            "references": []
+        }
+    ],
+    [
+        {
+            "id": "/recordings",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system",
+                    "uri": "http://THERMOSTAT/recordings/system"
+                },
+                {
+                    "id": "/recordings/heatSources",
+                    "uri": "http://THERMOSTAT/recordings/heatSources"
+                },
+                {
+                    "id": "/recordings/heatingCircuits",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits"
+                },
+                {
+                    "id": "/recordings/dhwCircuits",
+                    "uri": "http://THERMOSTAT/recordings/dhwCircuits"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors"
+                },
+                {
+                    "id": "/recordings/system/heatSources",
+                    "uri": "http://THERMOSTAT/recordings/system/heatSources"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors/temperatures",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors/temperatures"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/sensors/temperatures/outdoor_t1",
+                    "uri": "http://THERMOSTAT/recordings/system/sensors/temperatures/outdoor_t1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": -193277,
+                    "c": 59
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -193277,
+                    "c": 59
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                },
+                {
+                    "y": -196553,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4713996,
+                    "c": 1439
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4707444,
+                    "c": 1437
+                },
+                {
+                    "y": -4713996,
+                    "c": 1439
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -4710720,
+                    "c": 1438
+                },
+                {
+                    "y": -3400366,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1045006,
+                    "c": 319
+                },
+                {
+                    "y": -1179318,
+                    "c": 360
+                },
+                {
+                    "y": -1176042,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/sensors/temperatures/outdoor_t1",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/system/heatSources",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/heatSources/hs1",
+                    "uri": "http://THERMOSTAT/recordings/system/heatSources/hs1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/heatSources/hs1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/system/heatSources/hs1/actualPower",
+                    "uri": "http://THERMOSTAT/recordings/system/heatSources/hs1/actualPower"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/heatSources/hs1/actualPower?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 110,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 94,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 169,
+                    "c": 60
+                },
+                {
+                    "y": 99,
+                    "c": 60
+                },
+                {
+                    "y": 24,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/heatSources/hs1/actualPower?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 508,
+                    "c": 1438
+                },
+                {
+                    "y": 409,
+                    "c": 1438
+                },
+                {
+                    "y": 334,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1439
+                },
+                {
+                    "y": 185,
+                    "c": 1438
+                },
+                {
+                    "y": 267,
+                    "c": 1438
+                },
+                {
+                    "y": 440,
+                    "c": 1437
+                },
+                {
+                    "y": 349,
+                    "c": 1439
+                },
+                {
+                    "y": 382,
+                    "c": 1438
+                },
+                {
+                    "y": 496,
+                    "c": 1438
+                },
+                {
+                    "y": 218,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/heatSources/hs1/actualPower?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 275,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 243,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 359
+                },
+                {
+                    "y": 65,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 204,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 292,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 319
+                },
+                {
+                    "y": 218,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/system/heatSources/hs1/actualPower",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatSources/actualPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualPower"
+                },
+                {
+                    "id": "/recordings/heatSources/actualCHPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualCHPower"
+                },
+                {
+                    "id": "/recordings/heatSources/actualDHWPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/actualDHWPower"
+                },
+                {
+                    "id": "/recordings/heatSources/hs1",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/hs1"
+                },
+                {
+                    "id": "/recordings/heatSources/total",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/total"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 110,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 94,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 169,
+                    "c": 60
+                },
+                {
+                    "y": 99,
+                    "c": 60
+                },
+                {
+                    "y": 24,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 508,
+                    "c": 1438
+                },
+                {
+                    "y": 409,
+                    "c": 1438
+                },
+                {
+                    "y": 334,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1439
+                },
+                {
+                    "y": 185,
+                    "c": 1438
+                },
+                {
+                    "y": 267,
+                    "c": 1438
+                },
+                {
+                    "y": 440,
+                    "c": 1437
+                },
+                {
+                    "y": 349,
+                    "c": 1439
+                },
+                {
+                    "y": 382,
+                    "c": 1438
+                },
+                {
+                    "y": 496,
+                    "c": 1438
+                },
+                {
+                    "y": 218,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 275,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 243,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 359
+                },
+                {
+                    "y": 65,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 204,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 292,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 319
+                },
+                {
+                    "y": 218,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualPower",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualPower",
+                "uri": "http://192.168.32.242/heatSources/actualPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1439
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1437
+                },
+                {
+                    "y": 0,
+                    "c": 1439
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1438
+                },
+                {
+                    "y": 0,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 319
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualCHPower",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualCHPower",
+                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 110,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 94,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 169,
+                    "c": 60
+                },
+                {
+                    "y": 99,
+                    "c": 60
+                },
+                {
+                    "y": 24,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 507,
+                    "c": 1438
+                },
+                {
+                    "y": 411,
+                    "c": 1438
+                },
+                {
+                    "y": 334,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1438
+                },
+                {
+                    "y": 344,
+                    "c": 1439
+                },
+                {
+                    "y": 185,
+                    "c": 1438
+                },
+                {
+                    "y": 266,
+                    "c": 1438
+                },
+                {
+                    "y": 441,
+                    "c": 1437
+                },
+                {
+                    "y": 345,
+                    "c": 1439
+                },
+                {
+                    "y": 382,
+                    "c": 1438
+                },
+                {
+                    "y": 496,
+                    "c": 1438
+                },
+                {
+                    "y": 220,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 271,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 243,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 359
+                },
+                {
+                    "y": 65,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 204,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 292,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 319
+                },
+                {
+                    "y": 220,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/actualDHWPower",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/actualDHWPower",
+                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/hs1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatSources/hs1/actualPower",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/hs1/actualPower"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/hs1/actualPower?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/hs1/actualPower",
+                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 110,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 94,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 59
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                },
+                {
+                    "y": 169,
+                    "c": 60
+                },
+                {
+                    "y": 99,
+                    "c": 60
+                },
+                {
+                    "y": 24,
+                    "c": 60
+                },
+                {
+                    "y": 0,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/hs1/actualPower?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/hs1/actualPower",
+                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 508,
+                    "c": 1438
+                },
+                {
+                    "y": 409,
+                    "c": 1438
+                },
+                {
+                    "y": 334,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1438
+                },
+                {
+                    "y": 345,
+                    "c": 1439
+                },
+                {
+                    "y": 185,
+                    "c": 1438
+                },
+                {
+                    "y": 267,
+                    "c": 1438
+                },
+                {
+                    "y": 440,
+                    "c": 1437
+                },
+                {
+                    "y": 349,
+                    "c": 1439
+                },
+                {
+                    "y": 382,
+                    "c": 1438
+                },
+                {
+                    "y": 496,
+                    "c": 1438
+                },
+                {
+                    "y": 218,
+                    "c": 1038
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/hs1/actualPower?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/hs1/actualPower",
+                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 275,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 243,
+                    "c": 360
+                },
+                {
+                    "y": 74,
+                    "c": 359
+                },
+                {
+                    "y": 65,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 204,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 292,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 319
+                },
+                {
+                    "y": 218,
+                    "c": 360
+                },
+                {
+                    "y": 0,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/hs1/actualPower",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatSources/hs1/actualPower",
+                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/heatSources/total",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatSources/total/energyMonitoring",
+                    "uri": "http://THERMOSTAT/recordings/heatSources/total/energyMonitoring"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatSources/total/energyMonitoring",
+            "type": "refEnum",
+            "references": []
+        },
+        {
+            "id": "/recordings/heatingCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatingCircuits/hc1",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits/hc1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/heatingCircuits/hc1/roomtemperature",
+                    "uri": "http://THERMOSTAT/recordings/heatingCircuits/hc1/roomtemperature"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 1239,
+                    "c": 59
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1227,
+                    "c": 60
+                },
+                {
+                    "y": 1200,
+                    "c": 60
+                },
+                {
+                    "y": 1212,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1239,
+                    "c": 59
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1305,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                },
+                {
+                    "y": 1260,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 30317,
+                    "c": 1438
+                },
+                {
+                    "y": 30183,
+                    "c": 1438
+                },
+                {
+                    "y": 29960,
+                    "c": 1438
+                },
+                {
+                    "y": 30198,
+                    "c": 1438
+                },
+                {
+                    "y": 30716,
+                    "c": 1439
+                },
+                {
+                    "y": 30672,
+                    "c": 1438
+                },
+                {
+                    "y": 30658,
+                    "c": 1438
+                },
+                {
+                    "y": 30216,
+                    "c": 1437
+                },
+                {
+                    "y": 30219,
+                    "c": 1439
+                },
+                {
+                    "y": 30253,
+                    "c": 1438
+                },
+                {
+                    "y": 30102,
+                    "c": 1438
+                },
+                {
+                    "y": 22003,
+                    "c": 1036
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 7560,
+                    "c": 360
+                },
+                {
+                    "y": 7539,
+                    "c": 359
+                },
+                {
+                    "y": 7560,
+                    "c": 360
+                },
+                {
+                    "y": 7560,
+                    "c": 360
+                },
+                {
+                    "y": 7539,
+                    "c": 359
+                },
+                {
+                    "y": 7513,
+                    "c": 360
+                },
+                {
+                    "y": 7539,
+                    "c": 359
+                },
+                {
+                    "y": 7662,
+                    "c": 360
+                },
+                {
+                    "y": 7539,
+                    "c": 359
+                },
+                {
+                    "y": 7419,
+                    "c": 360
+                },
+                {
+                    "y": 7539,
+                    "c": 359
+                },
+                {
+                    "y": 7605,
+                    "c": 360
+                },
+                {
+                    "y": 6657,
+                    "c": 317
+                },
+                {
+                    "y": 7560,
+                    "c": 360
+                },
+                {
+                    "y": 7786,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/heatingCircuits/hc1/roomtemperature",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/heatingCircuits/hc1/roomtemperature",
+                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        },
+        {
+            "id": "/recordings/dhwCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/dhwCircuits/dhw1",
+                    "uri": "http://THERMOSTAT/recordings/dhwCircuits/dhw1"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/dhwCircuits/dhw1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/recordings/dhwCircuits/dhw1/actualTemp",
+                    "uri": "http://THERMOSTAT/recordings/dhwCircuits/dhw1/actualTemp"
+                }
+            ]
+        },
+        {
+            "id": "/recordings/dhwCircuits/dhw1/actualTemp?interval=2021-8-11",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/dhwCircuits/dhw1/actualTemp",
+                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+            },
+            "interval": "2021-8-11",
+            "sampleRate": "P1H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 3500,
+                    "c": 59
+                },
+                {
+                    "y": 3540,
+                    "c": 60
+                },
+                {
+                    "y": 3483,
+                    "c": 60
+                },
+                {
+                    "y": 3454,
+                    "c": 60
+                },
+                {
+                    "y": 3412,
+                    "c": 60
+                },
+                {
+                    "y": 3360,
+                    "c": 60
+                },
+                {
+                    "y": 3248,
+                    "c": 60
+                },
+                {
+                    "y": 3808,
+                    "c": 60
+                },
+                {
+                    "y": 3586,
+                    "c": 60
+                },
+                {
+                    "y": 3631,
+                    "c": 60
+                },
+                {
+                    "y": 3600,
+                    "c": 60
+                },
+                {
+                    "y": 3540,
+                    "c": 60
+                },
+                {
+                    "y": 3457,
+                    "c": 59
+                },
+                {
+                    "y": 3480,
+                    "c": 60
+                },
+                {
+                    "y": 3423,
+                    "c": 60
+                },
+                {
+                    "y": 3382,
+                    "c": 60
+                },
+                {
+                    "y": 3356,
+                    "c": 60
+                },
+                {
+                    "y": 3300,
+                    "c": 60
+                },
+                {
+                    "y": 3211,
+                    "c": 60
+                },
+                {
+                    "y": 3180,
+                    "c": 60
+                },
+                {
+                    "y": 3207,
+                    "c": 60
+                },
+                {
+                    "y": 3504,
+                    "c": 60
+                },
+                {
+                    "y": 3637,
+                    "c": 60
+                },
+                {
+                    "y": 3732,
+                    "c": 60
+                }
+            ]
+        },
+        {
+            "id": "/recordings/dhwCircuits/dhw1/actualTemp?interval=2021-8",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/dhwCircuits/dhw1/actualTemp",
+                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+            },
+            "interval": "2021-8",
+            "sampleRate": "P1D",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 83560,
+                    "c": 1438
+                },
+                {
+                    "y": 81817,
+                    "c": 1438
+                },
+                {
+                    "y": 81451,
+                    "c": 1438
+                },
+                {
+                    "y": 82041,
+                    "c": 1438
+                },
+                {
+                    "y": 82110,
+                    "c": 1439
+                },
+                {
+                    "y": 81066,
+                    "c": 1438
+                },
+                {
+                    "y": 81492,
+                    "c": 1438
+                },
+                {
+                    "y": 83873,
+                    "c": 1437
+                },
+                {
+                    "y": 81364,
+                    "c": 1439
+                },
+                {
+                    "y": 82332,
+                    "c": 1438
+                },
+                {
+                    "y": 83031,
+                    "c": 1438
+                },
+                {
+                    "y": 58677,
+                    "c": 1036
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/dhwCircuits/dhw1/actualTemp?interval=2021-W32",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/dhwCircuits/dhw1/actualTemp",
+                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+            },
+            "interval": "2021-W32",
+            "sampleRate": "P6H",
+            "recording-type": "actual",
+            "recording": [
+                {
+                    "y": 20368,
+                    "c": 360
+                },
+                {
+                    "y": 20490,
+                    "c": 359
+                },
+                {
+                    "y": 19910,
+                    "c": 360
+                },
+                {
+                    "y": 20596,
+                    "c": 360
+                },
+                {
+                    "y": 19964,
+                    "c": 359
+                },
+                {
+                    "y": 19691,
+                    "c": 360
+                },
+                {
+                    "y": 21509,
+                    "c": 359
+                },
+                {
+                    "y": 21168,
+                    "c": 360
+                },
+                {
+                    "y": 20749,
+                    "c": 359
+                },
+                {
+                    "y": 21413,
+                    "c": 360
+                },
+                {
+                    "y": 20398,
+                    "c": 359
+                },
+                {
+                    "y": 20471,
+                    "c": 360
+                },
+                {
+                    "y": 17997,
+                    "c": 317
+                },
+                {
+                    "y": 20677,
+                    "c": 360
+                },
+                {
+                    "y": 20003,
+                    "c": 359
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                },
+                {
+                    "y": 0,
+                    "c": 0
+                }
+            ]
+        },
+        {
+            "id": "/recordings/dhwCircuits/dhw1/actualTemp",
+            "type": "yRecording",
+            "writeable": 0,
+            "recordable": 0,
+            "recordedResource": {
+                "id": "/dhwCircuits/dhw1/actualTemp",
+                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+            },
+            "interval": "",
+            "sampleRate": "",
+            "recording-type": "actual",
+            "recording": []
+        }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]

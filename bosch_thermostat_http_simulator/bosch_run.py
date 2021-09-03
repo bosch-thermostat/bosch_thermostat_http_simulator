@@ -2,7 +2,7 @@ import click
 import logging
 from flask import Flask, jsonify, abort, Response, request
 from .encryption import Encryption
-from .bosch_scan import BoschScan
+from .bosch_scan import BoschScan, get_date_type
 from .const import (
     VALUE,
     NEFIT,
@@ -62,7 +62,18 @@ def create_app(token, password, file, device):
 
     @app.route("/<path:bosch_path>", methods=["get"])
     def index(bosch_path):
-        resp = bosch_scan.get_response(bosch_path)
+        def get_uri():
+            if "recordings" in bosch_path:
+                interval = request.args.get("interval")
+                if interval:
+                    return f"{bosch_path}?interval={get_date_type(interval)}"
+            if "energy/history" in bosch_path:
+                entry = request.args.get("entry")
+                if entry:
+                    return f"{bosch_path}?entry={entry}"
+            return bosch_path
+
+        resp = bosch_scan.get_response(get_uri())
         if not resp:
             abort(404, description="Resource not found")
         _LOGGER.info("Returning JSON: %s", resp)

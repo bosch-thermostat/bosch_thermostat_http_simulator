@@ -1,0 +1,3474 @@
+[
+    [
+        {
+            "id": "/dhwCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/hotWaterSystem"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/operationMode"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/programs"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/state"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/thermalDisinfect"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/hotWaterSystem",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "instant"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "infoText": "",
+            "value": "high"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/programs",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/programs/pg1"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/programs/pg1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/programs/pg1/week"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/programs/pg1/week",
+            "type": "dhwProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": [
+                {
+                    "d": "Su",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Su",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Su",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Su",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Mo",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Mo",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Mo",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Mo",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Tu",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Tu",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Tu",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Tu",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "We",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "We",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "We",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "We",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Th",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Th",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Th",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Th",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Fr",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Fr",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Fr",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Fr",
+                    "t": 1350,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Sa",
+                    "t": 390,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Sa",
+                    "t": 510,
+                    "dhw": "off"
+                },
+                {
+                    "d": "Sa",
+                    "t": 990,
+                    "dhw": "high"
+                },
+                {
+                    "d": "Sa",
+                    "t": 1350,
+                    "dhw": "off"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/state",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "on"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/temperatureLevels/high"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/temperatureLevels/high",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "false",
+            "available": "false",
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 80.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/thermalDisinfect",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/dhwCircuits/dhw1/thermalDisinfect/lastResult"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/thermalDisinfect/state"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/thermalDisinfect/time"
+                },
+                {
+                    "id": "/dhwCircuits/dhw1/thermalDisinfect/weekDay"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/thermalDisinfect/lastResult",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "done"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/thermalDisinfect/state",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "false",
+            "available": "true",
+            "value": "off"
+        },
+        {
+            "id": "/dhwCircuits/dhw1/thermalDisinfect/time",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "mins",
+            "minValue": 0.0,
+            "maxValue": 1439.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/dhwCircuits/dhw1/thermalDisinfect/weekDay",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Mo"
+        }
+    ],
+    [
+        {
+            "id": "/gateway",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/DateTime"
+                },
+                {
+                    "id": "/gateway/brand"
+                },
+                {
+                    "id": "/gateway/displayType"
+                },
+                {
+                    "id": "/gateway/eco"
+                },
+                {
+                    "id": "/gateway/hmip"
+                },
+                {
+                    "id": "/gateway/housingType"
+                },
+                {
+                    "id": "/gateway/identificationKey"
+                },
+                {
+                    "id": "/gateway/installer"
+                },
+                {
+                    "id": "/gateway/localisation"
+                },
+                {
+                    "id": "/gateway/notificationLight"
+                },
+                {
+                    "id": "/gateway/pirSensitivity"
+                },
+                {
+                    "id": "/gateway/productID"
+                },
+                {
+                    "id": "/gateway/productType"
+                },
+                {
+                    "id": "/gateway/region"
+                },
+                {
+                    "id": "/gateway/remoteServicesPassword"
+                },
+                {
+                    "id": "/gateway/serialnumber"
+                },
+                {
+                    "id": "/gateway/test"
+                },
+                {
+                    "id": "/gateway/time"
+                },
+                {
+                    "id": "/gateway/tosAccepted"
+                },
+                {
+                    "id": "/gateway/ui"
+                },
+                {
+                    "id": "/gateway/update"
+                },
+                {
+                    "id": "/gateway/user"
+                },
+                {
+                    "id": "/gateway/uuid"
+                },
+                {
+                    "id": "/gateway/versionFirmware"
+                },
+                {
+                    "id": "/gateway/versionFirmwareBuild"
+                },
+                {
+                    "id": "/gateway/versionHardware"
+                },
+                {
+                    "id": "/gateway/wifi"
+                },
+                {
+                    "id": "/gateway/wizardStepsDone"
+                },
+                {
+                    "id": "/gateway/zigbee"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/DateTime",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2021-04-22T20:39:28+03:00 Th"
+        },
+        {
+            "id": "/gateway/brand",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "Buderus"
+        },
+        {
+            "id": "/gateway/displayType",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "false",
+            "value": "Tianma_top_view"
+        },
+        {
+            "id": "/gateway/eco",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/eco/factor1"
+                },
+                {
+                    "id": "/gateway/eco/factor2"
+                },
+                {
+                    "id": "/gateway/eco/item1"
+                },
+                {
+                    "id": "/gateway/eco/item2"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/eco/factor1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 20.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/eco/factor2",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 60.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/eco/item1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/eco/item2",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/hmip",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/hmip/versionApplication"
+                },
+                {
+                    "id": "/gateway/hmip/versionOS"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/hmip/versionApplication",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "\u06edx"
+        },
+        {
+            "id": "/gateway/hmip/versionOS",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "1.36.0"
+        },
+        {
+            "id": "/gateway/housingType",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "false",
+            "value": "BuderusBlack"
+        },
+        {
+            "id": "/gateway/identificationKey",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/installer",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/installer/companyName"
+                },
+                {
+                    "id": "/gateway/installer/contactName"
+                },
+                {
+                    "id": "/gateway/installer/email"
+                },
+                {
+                    "id": "/gateway/installer/phone"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/installer/companyName",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Elit Klima"
+        },
+        {
+            "id": "/gateway/installer/contactName",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Volkan D\u00f6lenekeb"
+        },
+        {
+            "id": "/gateway/installer/email",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "elitklima35@gmail.com"
+        },
+        {
+            "id": "/gateway/installer/phone",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "5332129871"
+        },
+        {
+            "id": "/gateway/localisation",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "false",
+            "value": "Celsius"
+        },
+        {
+            "id": "/gateway/notificationLight",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/notificationLight/activate"
+                },
+                {
+                    "id": "/gateway/notificationLight/enabled"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/notificationLight/activate",
+            "type": "notificationStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "color": "",
+                    "mode": "",
+                    "time": 0
+                }
+            ]
+        },
+        {
+            "id": "/gateway/notificationLight/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "true"
+        },
+        {
+            "id": "/gateway/pirSensitivity",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "high"
+        },
+        {
+            "id": "/gateway/productID",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "8737906740"
+        },
+        {
+            "id": "/gateway/productType",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "RRC 2.0"
+        },
+        {
+            "id": "/gateway/region",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "false",
+            "value": "EU"
+        },
+        {
+            "id": "/gateway/remoteServicesPassword",
+            "type": "stringValue",
+            "writeable": 0,
+            "used": "true",
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/serialnumber",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/test",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/test/EEPROMvalues"
+                },
+                {
+                    "id": "/gateway/test/backlightEnabled"
+                },
+                {
+                    "id": "/gateway/test/backlightState"
+                },
+                {
+                    "id": "/gateway/test/brightnessCurrent"
+                },
+                {
+                    "id": "/gateway/test/controlByPower"
+                },
+                {
+                    "id": "/gateway/test/debugLogs"
+                },
+                {
+                    "id": "/gateway/test/emsCurrent"
+                },
+                {
+                    "id": "/gateway/test/exceptionStackFrameLog"
+                },
+                {
+                    "id": "/gateway/test/featureFlags"
+                },
+                {
+                    "id": "/gateway/test/heatingHysteresis"
+                },
+                {
+                    "id": "/gateway/test/heatingThreshold"
+                },
+                {
+                    "id": "/gateway/test/hmipCoproDutyCycle"
+                },
+                {
+                    "id": "/gateway/test/hmipEmsResetCount"
+                },
+                {
+                    "id": "/gateway/test/hmipReceiveCounters"
+                },
+                {
+                    "id": "/gateway/test/indoorAirDigitalCompensatedTemperature"
+                },
+                {
+                    "id": "/gateway/test/indoorAirDigitalCompensatedTemperatureSource"
+                },
+                {
+                    "id": "/gateway/test/indoorAirDigitalTemperatureSource"
+                },
+                {
+                    "id": "/gateway/test/indoorChipTemperatureSource"
+                },
+                {
+                    "id": "/gateway/test/lastAssert"
+                },
+                {
+                    "id": "/gateway/test/lastAssertWifi"
+                },
+                {
+                    "id": "/gateway/test/lastSoftReboot"
+                },
+                {
+                    "id": "/gateway/test/outdoorTemperatureSource"
+                },
+                {
+                    "id": "/gateway/test/proximitySensorLocked"
+                },
+                {
+                    "id": "/gateway/test/rebootCause"
+                },
+                {
+                    "id": "/gateway/test/timeCurrent"
+                },
+                {
+                    "id": "/gateway/test/zigbeeReceiveCounter"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/test/backlightEnabled",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/gateway/test/backlightState",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "backlight_fade_on"
+        },
+        {
+            "id": "/gateway/test/brightnessCurrent",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/controlByPower",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/gateway/test/debugLogs",
+            "type": "logArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "time": "2021-04-22T00:00:38+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-21T00:00:35+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-20T00:00:32+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-19T00:00:14+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-18T00:00:11+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-17T16:01:58+03:00",
+                    "level": "error",
+                    "message": "UPDTR-CHK: Timeout no message in database"
+                },
+                {
+                    "time": "2021-04-17T16:01:16+03:00",
+                    "level": "error",
+                    "message": "UPDTR-CHK: Timer timeout"
+                },
+                {
+                    "time": "2021-04-17T00:00:44+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-16T00:00:41+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                },
+                {
+                    "time": "2021-04-15T00:00:24+03:00",
+                    "level": "info",
+                    "message": "ENERGY_MONITOR: dt24 is active"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/test/emsCurrent",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 80.5,
+            "unitOfMeasure": "mA",
+            "minValue": 0.0,
+            "maxValue": 1000.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/exceptionStackFrameLog",
+            "type": "stringArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                "Date: 255-256-67435",
+                "r0: 0xffffffff",
+                "r1: 0xffffffff",
+                "r2: 0xffffffff",
+                "r3: 0xffffffff",
+                "r12: 0xffffffff",
+                "lr: 0xffffffff",
+                "pc: 0xffffffff",
+                "psr: 0xffffffff",
+                "fault_stat: 0xffffffff",
+                "hard_fault_stat: 0xffffffff",
+                "fault_addr: 0xffffffff",
+                "fault_mmaddr: 0xffffffff"
+            ]
+        },
+        {
+            "id": "/gateway/test/featureFlags",
+            "type": "featureFlagsStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "feature_rrc_as_remote": "feature_off",
+                    "feature_rrc_in_field_test": "feature_off"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/test/heatingHysteresis",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 2.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 50.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/heatingThreshold",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 6.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/hmipCoproDutyCycle",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/gateway/test/hmipEmsResetCount",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 65535.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/hmipReceiveCounters",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "0,5,0,0,0,0,0,0,0,0,0,0,2,1,0,1,0,0"
+        },
+        {
+            "id": "/gateway/test/indoorAirDigitalCompensatedTemperature",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 23.9,
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/test/indoorAirDigitalCompensatedTemperatureSource",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "physical_default"
+        },
+        {
+            "id": "/gateway/test/indoorAirDigitalTemperatureSource",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "physical_default"
+        },
+        {
+            "id": "/gateway/test/indoorChipTemperatureSource",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "physical_default"
+        },
+        {
+            "id": "/gateway/test/lastAssert",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": ""
+        },
+        {
+            "id": "/gateway/test/lastAssertWifi",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": ""
+        },
+        {
+            "id": "/gateway/test/lastSoftReboot",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "updater_start"
+        },
+        {
+            "id": "/gateway/test/outdoorTemperatureSource",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "physical_default"
+        },
+        {
+            "id": "/gateway/test/proximitySensorLocked",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/gateway/test/rebootCause",
+            "type": "stringArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                "POR",
+                "POR",
+                "SW"
+            ]
+        },
+        {
+            "id": "/gateway/test/timeCurrent",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2021-04-22T20:39:38+03:00 Th"
+        },
+        {
+            "id": "/gateway/test/zigbeeReceiveCounter",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 1000.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/time",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/time/clockType"
+                },
+                {
+                    "id": "/gateway/time/connected"
+                },
+                {
+                    "id": "/gateway/time/current"
+                },
+                {
+                    "id": "/gateway/time/startup"
+                },
+                {
+                    "id": "/gateway/time/startupWifi"
+                },
+                {
+                    "id": "/gateway/time/timeZone"
+                },
+                {
+                    "id": "/gateway/time/timeZoneUtcOffset"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/time/clockType",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "24hour"
+        },
+        {
+            "id": "/gateway/time/connected",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-04-19T07:48:29+03:00 Mo"
+        },
+        {
+            "id": "/gateway/time/current",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "2021-04-22T20:39:39+03:00 Th"
+        },
+        {
+            "id": "/gateway/time/startup",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-04-06T18:36:48+03:00 Tu"
+        },
+        {
+            "id": "/gateway/time/startupWifi",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-04-19T07:48:26+03:00 Mo"
+        },
+        {
+            "id": "/gateway/time/timeZone",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Europe/Istanbul"
+        },
+        {
+            "id": "/gateway/time/timeZoneUtcOffset",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "+03:00"
+        },
+        {
+            "id": "/gateway/tosAccepted",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "3.0"
+        },
+        {
+            "id": "/gateway/ui",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/ui/eco"
+                },
+                {
+                    "id": "/gateway/ui/icons"
+                },
+                {
+                    "id": "/gateway/ui/splashScreen"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/ui/eco",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 10.0
+        },
+        {
+            "id": "/gateway/ui/icons",
+            "type": "stringArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "id": "/gateway/ui/splashScreen",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "weather"
+        },
+        {
+            "id": "/gateway/update",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/update/enabled"
+                },
+                {
+                    "id": "/gateway/update/lastCheck"
+                },
+                {
+                    "id": "/gateway/update/lastUpdate"
+                },
+                {
+                    "id": "/gateway/update/state"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/update/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "true"
+        },
+        {
+            "id": "/gateway/update/lastCheck",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-04-22T00:00:48+03:00 Th"
+        },
+        {
+            "id": "/gateway/update/lastUpdate",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "2021-04-06T20:01:16+03:00 Tu"
+        },
+        {
+            "id": "/gateway/update/state",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "no update"
+        },
+        {
+            "id": "/gateway/user",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/user/address"
+                },
+                {
+                    "id": "/gateway/user/email"
+                },
+                {
+                    "id": "/gateway/user/name"
+                },
+                {
+                    "id": "/gateway/user/phone"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/user/address",
+            "type": "addressInfo",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/user/email",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/user/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/user/phone",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/uuid",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/gateway/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "03.04.01"
+        },
+        {
+            "id": "/gateway/versionFirmwareBuild",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "RP_"
+        },
+        {
+            "id": "/gateway/versionHardware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "10"
+        },
+        {
+            "id": "/gateway/wifi",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/wifi/rssi"
+                },
+                {
+                    "id": "/gateway/wifi/versionFirmware"
+                },
+                {
+                    "id": "/gateway/wifi/versionFirmwareBuild"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/wifi/rssi",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": -70,
+            "unitOfMeasure": "dB",
+            "minValue": -32768.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/gateway/wifi/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "01.10.00"
+        },
+        {
+            "id": "/gateway/wifi/versionFirmwareBuild",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "RP_72a9e64"
+        },
+        {
+            "id": "/gateway/wizardStepsDone",
+            "type": "stringArray",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                "REGISTER",
+                "RRC",
+                "HMIP"
+            ]
+        },
+        {
+            "id": "/gateway/zigbee",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/gateway/zigbee/versionFirmware"
+                }
+            ]
+        },
+        {
+            "id": "/gateway/zigbee/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "00.00.01"
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatingCircuits/hc1/buildingHeatup"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/control"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatCurveMax"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/heatCurveMin"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/maxSupply"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/minSupply"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/nightSwitchMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/nightThreshold"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/powerSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/roomInfluence"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/setpointOptimization"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/suWiSwitchMode"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/suWiThreshold"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/type"
+                },
+                {
+                    "id": "/heatingCircuits/hc1/typeRoomControl"
+                }
+            ]
+        },
+        {
+            "id": "/heatingCircuits/hc1/buildingHeatup",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "true",
+            "recordable": 0,
+            "value": "normal"
+        },
+        {
+            "id": "/heatingCircuits/hc1/control",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "room"
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatCurveMax",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 75.0,
+            "unitOfMeasure": "C",
+            "minValue": 40.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/heatCurveMin",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 20.0,
+            "unitOfMeasure": "C",
+            "minValue": 20.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/maxSupply",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 90.0,
+            "unitOfMeasure": "C",
+            "minValue": 25.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/minSupply",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 20.0,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/nightSwitchMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "automatic"
+        },
+        {
+            "id": "/heatingCircuits/hc1/nightThreshold",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 16.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/heatingCircuits/hc1/powerSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 100.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/roomInfluence",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 3.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/setpointOptimization",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "true",
+            "recordable": 0,
+            "value": "off"
+        },
+        {
+            "id": "/heatingCircuits/hc1/suWiSwitchMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "automatic"
+        },
+        {
+            "id": "/heatingCircuits/hc1/suWiThreshold",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 20.0,
+            "unitOfMeasure": "C",
+            "minValue": 10.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/heatingCircuits/hc1/supplyTemperatureSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 35.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatingCircuits/hc1/type",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "false",
+            "recordable": 0,
+            "value": "radiator"
+        },
+        {
+            "id": "/heatingCircuits/hc1/typeRoomControl",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "true",
+            "recordable": 0,
+            "value": "radiator"
+        }
+    ],
+    [
+        {
+            "id": "/heatSources",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/heatSources/CHpumpModulation"
+                },
+                {
+                    "id": "/heatSources/actualModulation"
+                },
+                {
+                    "id": "/heatSources/actualSupplyTemperature"
+                },
+                {
+                    "id": "/heatSources/antiFastCycleTime"
+                },
+                {
+                    "id": "/heatSources/enabled"
+                },
+                {
+                    "id": "/heatSources/flameIndication"
+                },
+                {
+                    "id": "/heatSources/info"
+                },
+                {
+                    "id": "/heatSources/numberOfStarts"
+                },
+                {
+                    "id": "/heatSources/refillNeeded"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/CHpumpModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatSources/actualModulation",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatSources/actualSupplyTemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 37.5,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatSources/antiFastCycleTime",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 3.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "mins",
+            "minValue": 0.0,
+            "maxValue": 60.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatSources/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "false",
+            "available": "false",
+            "value": "true"
+        },
+        {
+            "id": "/heatSources/flameIndication",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "off"
+        },
+        {
+            "id": "/heatSources/info",
+            "type": "systeminfo",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": [
+                {
+                    "Tok": "8",
+                    "Id": "1400",
+                    "Ver": "4",
+                    "No": "    82901234567897736900265"
+                }
+            ]
+        },
+        {
+            "id": "/heatSources/numberOfStarts",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 21948.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 16777215.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/heatSources/refillNeeded",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "false"
+        }
+    ],
+    [
+        {
+            "id": "/notifications",
+            "type": "errorList",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": []
+        }
+    ],
+    [
+        {
+            "id": "/system",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/appliance"
+                },
+                {
+                    "id": "/system/autoAway"
+                },
+                {
+                    "id": "/system/awayMode"
+                },
+                {
+                    "id": "/system/brand"
+                },
+                {
+                    "id": "/system/fireplace"
+                },
+                {
+                    "id": "/system/info"
+                },
+                {
+                    "id": "/system/interfaces"
+                },
+                {
+                    "id": "/system/location"
+                },
+                {
+                    "id": "/system/sensors"
+                }
+            ]
+        },
+        {
+            "id": "/system/appliance",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/appliance/blockingError"
+                },
+                {
+                    "id": "/system/appliance/causeCode"
+                },
+                {
+                    "id": "/system/appliance/displayCode"
+                },
+                {
+                    "id": "/system/appliance/firstMaintenanceRequest"
+                },
+                {
+                    "id": "/system/appliance/lockingError"
+                },
+                {
+                    "id": "/system/appliance/maintenanceRequest"
+                },
+                {
+                    "id": "/system/appliance/systemPressure"
+                }
+            ]
+        },
+        {
+            "id": "/system/appliance/blockingError",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "false"
+        },
+        {
+            "id": "/system/appliance/causeCode",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 305.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "",
+            "minValue": 200.0,
+            "maxValue": 65535.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/appliance/displayCode",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "0A"
+        },
+        {
+            "id": "/system/appliance/firstMaintenanceRequest",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 99.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/appliance/lockingError",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "false"
+        },
+        {
+            "id": "/system/appliance/maintenanceRequest",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "false"
+        },
+        {
+            "id": "/system/appliance/systemPressure",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 25.5,
+            "used": "false",
+            "available": "true",
+            "unitOfMeasure": "bar",
+            "minValue": 0.0,
+            "maxValue": 25.0,
+            "stepSize": 0.1
+        },
+        {
+            "id": "/system/autoAway",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/comingHome"
+                },
+                {
+                    "id": "/system/autoAway/enabled"
+                },
+                {
+                    "id": "/system/autoAway/users"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/comingHome",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/comingHome/active"
+                },
+                {
+                    "id": "/system/autoAway/comingHome/prediction"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/comingHome/active",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/system/autoAway/comingHome/prediction",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "mins",
+            "minValue": 0.0,
+            "maxValue": 120.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/autoAway/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "true"
+        },
+        {
+            "id": "/system/autoAway/users",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/users/list"
+                },
+                {
+                    "id": "/system/autoAway/users/us1"
+                },
+                {
+                    "id": "/system/autoAway/users/us2"
+                },
+                {
+                    "id": "/system/autoAway/users/us3"
+                },
+                {
+                    "id": "/system/autoAway/users/us4"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/list",
+            "type": "autoAwayArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "id": 1,
+                    "name": "SMO8cmfDvG4gS2FyZ8SxY8Sxb8SfbHU=",
+                    "away": "false"
+                },
+                {
+                    "id": 2,
+                    "name": "TWFobXV0IEhpa21ldCBLYXJnxLFjxLFvxJ9sdQ==",
+                    "away": "false"
+                },
+                {
+                    "id": 3,
+                    "name": "R8O2emRlIEthcmfEsWPEsW/En2x1",
+                    "away": "false"
+                },
+                {
+                    "id": 4,
+                    "name": "RW1yZSBLYXJnxLFjxLFvxJ9sdQ==",
+                    "away": "false"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/users/us1/awayStatus"
+                },
+                {
+                    "id": "/system/autoAway/users/us1/name"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us1/awayStatus",
+            "type": "predictionStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "away": "false",
+                    "prediction": "unknown",
+                    "confidence": 0,
+                    "time_to_arrival": 0
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us1/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Laura"
+        },
+        {
+            "id": "/system/autoAway/users/us2",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/users/us2/awayStatus"
+                },
+                {
+                    "id": "/system/autoAway/users/us2/name"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us2/awayStatus",
+            "type": "predictionStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "away": "false",
+                    "prediction": "unknown",
+                    "confidence": 0,
+                    "time_to_arrival": 0
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us2/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Mike"
+        },
+        {
+            "id": "/system/autoAway/users/us3",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/users/us3/awayStatus"
+                },
+                {
+                    "id": "/system/autoAway/users/us3/name"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us3/awayStatus",
+            "type": "predictionStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "away": "false",
+                    "prediction": "unknown",
+                    "confidence": 0,
+                    "time_to_arrival": 0
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us3/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Kelly"
+        },
+        {
+            "id": "/system/autoAway/users/us4",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/autoAway/users/us4/awayStatus"
+                },
+                {
+                    "id": "/system/autoAway/users/us4/name"
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us4/awayStatus",
+            "type": "predictionStruct",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "away": "false",
+                    "prediction": "unknown",
+                    "confidence": 0,
+                    "time_to_arrival": 0
+                }
+            ]
+        },
+        {
+            "id": "/system/autoAway/users/us4/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Jenny"
+        },
+        {
+            "id": "/system/awayMode",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/awayMode/enabled"
+                },
+                {
+                    "id": "/system/awayMode/temperature"
+                }
+            ]
+        },
+        {
+            "id": "/system/awayMode/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "true",
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/system/awayMode/temperature",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 22.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/system/brand",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "Buderus"
+        },
+        {
+            "id": "/system/fireplace",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/fireplace/enabled"
+                }
+            ]
+        },
+        {
+            "id": "/system/fireplace/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "false"
+        },
+        {
+            "id": "/system/info",
+            "type": "systeminfo",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": [
+                {
+                    "Tok": "8",
+                    "Id": "123",
+                    "Ver": "NF7.0",
+                    "No": "87379100270120030801"
+                }
+            ]
+        },
+        {
+            "id": "/system/interfaces",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/interfaces/ems"
+                }
+            ]
+        },
+        {
+            "id": "/system/interfaces/ems",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/interfaces/ems/connectionType"
+                },
+                {
+                    "id": "/system/interfaces/ems/enabled"
+                }
+            ]
+        },
+        {
+            "id": "/system/interfaces/ems/connectionType",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "wired"
+        },
+        {
+            "id": "/system/interfaces/ems/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "false",
+            "recordable": 0,
+            "value": "true"
+        },
+        {
+            "id": "/system/location",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/location/coordinates"
+                },
+                {
+                    "id": "/system/location/localization"
+                }
+            ]
+        },
+        {
+            "id": "/system/location/coordinates",
+            "type": "stringArray",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/system/location/localization",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "-1"
+        },
+        {
+            "id": "/system/sensors",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/humidity"
+                },
+                {
+                    "id": "/system/sensors/temperatures"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/humidity",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/humidity/indoor_h1"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/humidity/indoor_h1",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 44.0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/sensors/temperatures",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/system/sensors/temperatures/indoorAirDigital"
+                },
+                {
+                    "id": "/system/sensors/temperatures/indoorChip"
+                },
+                {
+                    "id": "/system/sensors/temperatures/indoorPCB"
+                },
+                {
+                    "id": "/system/sensors/temperatures/offset"
+                },
+                {
+                    "id": "/system/sensors/temperatures/outdoor_t1"
+                }
+            ]
+        },
+        {
+            "id": "/system/sensors/temperatures/indoorAirDigital",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 27.3,
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/sensors/temperatures/indoorChip",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 41.7,
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/sensors/temperatures/indoorPCB",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 36.2,
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 90.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/system/sensors/temperatures/offset",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "C",
+            "minValue": -2.0,
+            "maxValue": 2.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/system/sensors/temperatures/outdoor_t1",
+            "type": "floatValue",
+            "recordable": 0,
+            "writeable": 0,
+            "value": 16.0,
+            "unitOfMeasure": "C",
+            "status": "ok",
+            "srcType": "virtual",
+            "minValue": -25.0,
+            "maxValue": 50.0,
+            "stepSize": 1.0
+        }
+    ],
+    [],
+    [],
+    [
+        {
+            "id": "/devices",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/devices/dev1"
+                },
+                {
+                    "id": "/devices/device1"
+                },
+                {
+                    "id": "/devices/list"
+                },
+                {
+                    "id": "/devices/productLookup"
+                }
+            ]
+        },
+        {
+            "id": "/devices/dev1",
+            "type": "deviceArray",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "name": "TG9nYW1hdGljIFXDMTAw",
+                    "zone": 1,
+                    "protocol": "unknown",
+                    "sgtin": "000000000000000000000000",
+                    "dlk": "00000000000000000000000000000000",
+                    "signal": 0,
+                    "battery": "unknown",
+                    "type": "thermostat"
+                }
+            ]
+        },
+        {
+            "id": "/devices/device1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/devices/device1/battery"
+                },
+                {
+                    "id": "/devices/device1/name"
+                },
+                {
+                    "id": "/devices/device1/protocol"
+                },
+                {
+                    "id": "/devices/device1/signal"
+                },
+                {
+                    "id": "/devices/device1/thermostat"
+                },
+                {
+                    "id": "/devices/device1/type"
+                },
+                {
+                    "id": "/devices/device1/versionFirmware"
+                },
+                {
+                    "id": "/devices/device1/zone"
+                }
+            ]
+        },
+        {
+            "id": "/devices/device1/battery",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "unknown"
+        },
+        {
+            "id": "/devices/device1/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Logamatic TC100"
+        },
+        {
+            "id": "/devices/device1/protocol",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "unknown"
+        },
+        {
+            "id": "/devices/device1/signal",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0,
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/devices/device1/thermostat",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/devices/device1/thermostat/childLock"
+                }
+            ]
+        },
+        {
+            "id": "/devices/device1/thermostat/childLock",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/devices/device1/thermostat/childLock/enabled"
+                }
+            ]
+        },
+        {
+            "id": "/devices/device1/thermostat/childLock/enabled",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "false"
+        },
+        {
+            "id": "/devices/device1/type",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "thermostat"
+        },
+        {
+            "id": "/devices/device1/versionFirmware",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "3.4.1"
+        },
+        {
+            "id": "/devices/device1/zone",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1,
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 24.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/devices/list",
+            "type": "deviceArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "name": "TG9nYW1hdGljIFXDMTAw",
+                    "zone": 1,
+                    "protocol": "no_protocol",
+                    "id": 1,
+                    "battery": "unknown",
+                    "signal": 0,
+                    "type": "thermostat"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/energy",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/energy/currency"
+                },
+                {
+                    "id": "/energy/electricity"
+                },
+                {
+                    "id": "/energy/gas"
+                },
+                {
+                    "id": "/energy/history"
+                },
+                {
+                    "id": "/energy/historyEntries"
+                },
+                {
+                    "id": "/energy/water"
+                }
+            ]
+        },
+        {
+            "id": "/energy/currency",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "\u20ba"
+        },
+        {
+            "id": "/energy/electricity",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/energy/electricity/dayAverage"
+                },
+                {
+                    "id": "/energy/electricity/monthAverage"
+                },
+                {
+                    "id": "/energy/electricity/price"
+                }
+            ]
+        },
+        {
+            "id": "/energy/electricity/dayAverage",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "false",
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 33555.0,
+            "stepSize": 0.001
+        },
+        {
+            "id": "/energy/electricity/monthAverage",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "false",
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 33555.0,
+            "stepSize": 0.001
+        },
+        {
+            "id": "/energy/electricity/price",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "false",
+            "available": "false",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 1000.0,
+            "stepSize": 1e-05
+        },
+        {
+            "id": "/energy/gas",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/energy/gas/annualGoal"
+                },
+                {
+                    "id": "/energy/gas/price"
+                },
+                {
+                    "id": "/energy/gas/type"
+                },
+                {
+                    "id": "/energy/gas/unit"
+                }
+            ]
+        },
+        {
+            "id": "/energy/gas/annualGoal",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "kWh",
+            "minValue": 0.0,
+            "maxValue": 1000000.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/energy/gas/price",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 1000.0,
+            "stepSize": 1e-05
+        },
+        {
+            "id": "/energy/gas/type",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "natural"
+        },
+        {
+            "id": "/energy/gas/unit",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "m3"
+        },
+        {
+            "id": "/energy/history",
+            "type": "energyRecordings",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": [
+                {
+                    "d": "19-03-2021",
+                    "eCH": 21.87,
+                    "eHW": 2.97,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 12.3
+                },
+                {
+                    "d": "20-03-2021",
+                    "eCH": 48.59,
+                    "eHW": 9.4,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 12.6
+                },
+                {
+                    "d": "21-03-2021",
+                    "eCH": 44.07,
+                    "eHW": 7.1,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 15.0
+                },
+                {
+                    "d": "22-03-2021",
+                    "eCH": 30.88,
+                    "eHW": 9.89,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 16.2
+                },
+                {
+                    "d": "23-03-2021",
+                    "eCH": 85.4,
+                    "eHW": 9.35,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 11.3
+                },
+                {
+                    "d": "24-03-2021",
+                    "eCH": 114.59,
+                    "eHW": 5.92,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 7.0
+                },
+                {
+                    "d": "25-03-2021",
+                    "eCH": 105.57,
+                    "eHW": 10.62,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 6.0
+                },
+                {
+                    "d": "26-03-2021",
+                    "eCH": 91.72,
+                    "eHW": 7.32,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 7.5
+                },
+                {
+                    "d": "27-03-2021",
+                    "eCH": 81.76,
+                    "eHW": 7.23,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 9.1
+                },
+                {
+                    "d": "28-03-2021",
+                    "eCH": 74.89,
+                    "eHW": 4.69,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 11.4
+                },
+                {
+                    "d": "29-03-2021",
+                    "eCH": 61.78,
+                    "eHW": 9.9,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 12.8
+                },
+                {
+                    "d": "30-03-2021",
+                    "eCH": 77.91,
+                    "eHW": 8.96,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 12.2
+                },
+                {
+                    "d": "31-03-2021",
+                    "eCH": 77.06,
+                    "eHW": 5.07,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 10.5
+                },
+                {
+                    "d": "01-04-2021",
+                    "eCH": 90.87,
+                    "eHW": 8.07,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 9.3
+                },
+                {
+                    "d": "02-04-2021",
+                    "eCH": 78.54,
+                    "eHW": 5.59,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 11.2
+                },
+                {
+                    "d": "03-04-2021",
+                    "eCH": 42.46,
+                    "eHW": 11.9,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 14.8
+                },
+                {
+                    "d": "04-04-2021",
+                    "eCH": 32.53,
+                    "eHW": 8.34,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 16.5
+                },
+                {
+                    "d": "05-04-2021",
+                    "eCH": 30.15,
+                    "eHW": 6.46,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 16.8
+                },
+                {
+                    "d": "06-04-2021",
+                    "eCH": 6.41,
+                    "eHW": 5.63,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 18.2
+                },
+                {
+                    "d": "07-04-2021",
+                    "eCH": 6.97,
+                    "eHW": 7.06,
+                    "eSH": 0.0,
+                    "wSH": 0.0,
+                    "elec": 0.0,
+                    "T": 17.0
+                }
+            ]
+        },
+        {
+            "id": "/energy/historyEntries",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 34.0,
+            "used": "true",
+            "available": "true",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 6400.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/energy/water",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/energy/water/annualGoal"
+                },
+                {
+                    "id": "/energy/water/price"
+                }
+            ]
+        },
+        {
+            "id": "/energy/water/annualGoal",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "false",
+            "available": "false",
+            "unitOfMeasure": "m3",
+            "minValue": 0.0,
+            "maxValue": 1000000.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/energy/water/price",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "false",
+            "available": "false",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 1000.0,
+            "stepSize": 1e-05
+        }
+    ],
+    [
+        {
+            "id": "/events",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/events/list1"
+                },
+                {
+                    "id": "/events/list2"
+                },
+                {
+                    "id": "/events/list3"
+                }
+            ]
+        },
+        {
+            "id": "/events/list1",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        },
+        {
+            "id": "/events/list2",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        },
+        {
+            "id": "/events/list3",
+            "type": "eventArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": []
+        }
+    ],
+    [
+        {
+            "id": "/programs",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/programs/list"
+                },
+                {
+                    "id": "/programs/pg1"
+                }
+            ]
+        },
+        {
+            "id": "/programs/list",
+            "type": "programArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "id": 1,
+                    "name": ""
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/programs/pg1/friday"
+                },
+                {
+                    "id": "/programs/pg1/monday"
+                },
+                {
+                    "id": "/programs/pg1/name"
+                },
+                {
+                    "id": "/programs/pg1/saturday"
+                },
+                {
+                    "id": "/programs/pg1/sunday"
+                },
+                {
+                    "id": "/programs/pg1/thursday"
+                },
+                {
+                    "id": "/programs/pg1/tuesday"
+                },
+                {
+                    "id": "/programs/pg1/wednesday"
+                },
+                {
+                    "id": "/programs/pg1/week"
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/friday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/monday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": ""
+        },
+        {
+            "id": "/programs/pg1/saturday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/sunday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/thursday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/tuesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/wednesday",
+            "type": "dayProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        },
+        {
+            "id": "/programs/pg1/week",
+            "type": "weekProgram",
+            "writeable": 1,
+            "recordable": 0,
+            "value": [
+                {
+                    "d": "Su",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Su",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Mo",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Tu",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "We",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Th",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Fr",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 0,
+                    "Th": 22.0,
+                    "name": 0
+                },
+                {
+                    "d": "Sa",
+                    "t": 540,
+                    "Th": 24.0,
+                    "name": 0
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/zones",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/zones/deviceTypeAllowed"
+                },
+                {
+                    "id": "/zones/list"
+                },
+                {
+                    "id": "/zones/zn1"
+                }
+            ]
+        },
+        {
+            "id": "/zones/deviceTypeAllowed",
+            "type": "zoneConfigArray",
+            "writeable": 0,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": [
+                {
+                    "id": 1,
+                    "name": "U2Fsb24=",
+                    "icon": "tv room",
+                    "allowDev": "all"
+                }
+            ]
+        },
+        {
+            "id": "/zones/list",
+            "type": "zoneArray",
+            "writeable": 0,
+            "recordable": 0,
+            "value": [
+                {
+                    "id": 1,
+                    "name": "U2Fsb24=",
+                    "icon": "tv room",
+                    "program": 1,
+                    "temp": 23.9,
+                    "status": "idle"
+                }
+            ]
+        },
+        {
+            "id": "/zones/zn1",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/zones/zn1/actualValvePosition"
+                },
+                {
+                    "id": "/zones/zn1/clockOverride"
+                },
+                {
+                    "id": "/zones/zn1/clockProgram"
+                },
+                {
+                    "id": "/zones/zn1/heatingType"
+                },
+                {
+                    "id": "/zones/zn1/icon"
+                },
+                {
+                    "id": "/zones/zn1/manualTemperatureHeating"
+                },
+                {
+                    "id": "/zones/zn1/name"
+                },
+                {
+                    "id": "/zones/zn1/nextSetpoint"
+                },
+                {
+                    "id": "/zones/zn1/optimumStartHeatupRate"
+                },
+                {
+                    "id": "/zones/zn1/optimumStartState"
+                },
+                {
+                    "id": "/zones/zn1/status"
+                },
+                {
+                    "id": "/zones/zn1/temperatureActual"
+                },
+                {
+                    "id": "/zones/zn1/temperatureHeatingSetpoint"
+                },
+                {
+                    "id": "/zones/zn1/timeToNextSetpoint"
+                },
+                {
+                    "id": "/zones/zn1/userMode"
+                }
+            ]
+        },
+        {
+            "id": "/zones/zn1/actualValvePosition",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 0.0,
+            "used": "false",
+            "unitOfMeasure": "%",
+            "minValue": 0.0,
+            "maxValue": 100.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/zones/zn1/clockOverride",
+            "type": "refEnum",
+            "references": [
+                {
+                    "id": "/zones/zn1/clockOverride/temperatureHeating"
+                }
+            ]
+        },
+        {
+            "id": "/zones/zn1/clockOverride/temperatureHeating",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 0.0,
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/zones/zn1/clockProgram",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 1.0,
+            "used": "true",
+            "unitOfMeasure": "",
+            "minValue": 0.0,
+            "maxValue": 24.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/zones/zn1/heatingType",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "used": "true",
+            "available": "true",
+            "value": "radiator"
+        },
+        {
+            "id": "/zones/zn1/icon",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "tv room"
+        },
+        {
+            "id": "/zones/zn1/manualTemperatureHeating",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": 28.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/zones/zn1/name",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 0,
+            "value": "Salon"
+        },
+        {
+            "id": "/zones/zn1/nextSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 22.0,
+            "used": "true",
+            "unitOfMeasure": "C",
+            "minValue": 0.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/zones/zn1/optimumStartHeatupRate",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 1200.0,
+            "unitOfMeasure": "s/K",
+            "minValue": 0.0,
+            "maxValue": 1.0,
+            "stepSize": 1e-06
+        },
+        {
+            "id": "/zones/zn1/optimumStartState",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "off"
+        },
+        {
+            "id": "/zones/zn1/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "idle"
+        },
+        {
+            "id": "/zones/zn1/temperatureActual",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 23.9,
+            "used": "true",
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/zones/zn1/temperatureHeatingSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 24.0,
+            "used": "true",
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 30.0,
+            "stepSize": 0.5
+        },
+        {
+            "id": "/zones/zn1/timeToNextSetpoint",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": 199.0,
+            "used": "true",
+            "unitOfMeasure": "mins",
+            "minValue": 0.0,
+            "maxValue": 1440.0,
+            "stepSize": 1.0
+        },
+        {
+            "id": "/zones/zn1/userMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "used": "true",
+            "recordable": 0,
+            "value": "clock"
+        }
+    ]
+]
