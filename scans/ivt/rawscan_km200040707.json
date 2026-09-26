@@ -411,9 +411,9 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "11111",
+            "value": "-1",
             "allowedValues": [
-                "11111"
+                "-1"
             ]
         },
         {
