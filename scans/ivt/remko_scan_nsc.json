@@ -2561,7 +2561,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/system/sensors/temperatures/outdoor_t1",
-                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+                "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -2672,7 +2672,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/system/sensors/temperatures/outdoor_t1",
-                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+                "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -2811,7 +2811,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/system/sensors/temperatures/outdoor_t1",
-                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+                "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -2938,7 +2938,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/system/sensors/temperatures/outdoor_t1",
-                "uri": "http://192.168.32.242/system/sensors/temperatures/outdoor_t1"
+                "uri": "http://THERMOSTAT/system/sensors/temperatures/outdoor_t1"
             },
             "interval": "",
             "sampleRate": "",
@@ -2972,7 +2972,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -3083,7 +3083,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -3222,7 +3222,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -3349,7 +3349,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "",
             "sampleRate": "",
@@ -3389,7 +3389,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -3500,7 +3500,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -3639,7 +3639,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -3766,7 +3766,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualPower",
-                "uri": "http://192.168.32.242/heatSources/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/actualPower"
             },
             "interval": "",
             "sampleRate": "",
@@ -3780,7 +3780,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualCHPower",
-                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+                "uri": "http://THERMOSTAT/heatSources/actualCHPower"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -3891,7 +3891,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualCHPower",
-                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+                "uri": "http://THERMOSTAT/heatSources/actualCHPower"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -4030,7 +4030,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualCHPower",
-                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+                "uri": "http://THERMOSTAT/heatSources/actualCHPower"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -4157,7 +4157,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualCHPower",
-                "uri": "http://192.168.32.242/heatSources/actualCHPower"
+                "uri": "http://THERMOSTAT/heatSources/actualCHPower"
             },
             "interval": "",
             "sampleRate": "",
@@ -4171,7 +4171,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualDHWPower",
-                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+                "uri": "http://THERMOSTAT/heatSources/actualDHWPower"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -4282,7 +4282,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualDHWPower",
-                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+                "uri": "http://THERMOSTAT/heatSources/actualDHWPower"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -4421,7 +4421,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualDHWPower",
-                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+                "uri": "http://THERMOSTAT/heatSources/actualDHWPower"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -4548,7 +4548,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/actualDHWPower",
-                "uri": "http://192.168.32.242/heatSources/actualDHWPower"
+                "uri": "http://THERMOSTAT/heatSources/actualDHWPower"
             },
             "interval": "",
             "sampleRate": "",
@@ -4572,7 +4572,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/hs1/actualPower",
-                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/hs1/actualPower"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -4683,7 +4683,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/hs1/actualPower",
-                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/hs1/actualPower"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -4822,7 +4822,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/hs1/actualPower",
-                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/hs1/actualPower"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -4949,7 +4949,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatSources/hs1/actualPower",
-                "uri": "http://192.168.32.242/heatSources/hs1/actualPower"
+                "uri": "http://THERMOSTAT/heatSources/hs1/actualPower"
             },
             "interval": "",
             "sampleRate": "",
@@ -4998,7 +4998,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatingCircuits/hc1/roomtemperature",
-                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -5109,7 +5109,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatingCircuits/hc1/roomtemperature",
-                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -5248,7 +5248,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatingCircuits/hc1/roomtemperature",
-                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -5375,7 +5375,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/heatingCircuits/hc1/roomtemperature",
-                "uri": "http://192.168.32.242/heatingCircuits/hc1/roomtemperature"
+                "uri": "http://THERMOSTAT/heatingCircuits/hc1/roomtemperature"
             },
             "interval": "",
             "sampleRate": "",
@@ -5409,7 +5409,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/dhwCircuits/dhw1/actualTemp",
-                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
             },
             "interval": "2021-8-11",
             "sampleRate": "P1H",
@@ -5520,7 +5520,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/dhwCircuits/dhw1/actualTemp",
-                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
             },
             "interval": "2021-8",
             "sampleRate": "P1D",
@@ -5659,7 +5659,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/dhwCircuits/dhw1/actualTemp",
-                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
             },
             "interval": "2021-W32",
             "sampleRate": "P6H",
@@ -5786,7 +5786,7 @@
             "recordable": 0,
             "recordedResource": {
                 "id": "/dhwCircuits/dhw1/actualTemp",
-                "uri": "http://192.168.32.242/dhwCircuits/dhw1/actualTemp"
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/actualTemp"
             },
             "interval": "",
             "sampleRate": "",
