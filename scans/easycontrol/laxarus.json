@@ -548,28 +548,28 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Elit Klima"
+            "value": "-1"
         },
         {
             "id": "/gateway/installer/contactName",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Volkan D\u00f6lenekeb"
+            "value": "-1"
         },
         {
             "id": "/gateway/installer/email",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "elitklima35@gmail.com"
+            "value": "-1"
         },
         {
             "id": "/gateway/installer/phone",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "5332129871"
+            "value": "-1"
         },
         {
             "id": "/gateway/localisation",
@@ -1983,7 +1983,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Laura"
+            "value": "-1"
         },
         {
             "id": "/system/autoAway/users/us2",
@@ -2016,7 +2016,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Mike"
+            "value": "-1"
         },
         {
             "id": "/system/autoAway/users/us3",
@@ -2049,7 +2049,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Kelly"
+            "value": "-1"
         },
         {
             "id": "/system/autoAway/users/us4",
@@ -2082,7 +2082,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "Jenny"
+            "value": "-1"
         },
         {
             "id": "/system/awayMode",

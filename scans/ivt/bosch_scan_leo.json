@@ -430,11 +430,11 @@
             "type": "refEnum"
         },
         {
-            "allowedValues": ["0001A"],
+            "allowedValues": ["-1"],
             "id": "/gateway/uuid",
             "recordable": 0,
             "type": "stringValue",
-            "value": "0001A",
+            "value": "-1",
             "writeable": 0
         },
         {

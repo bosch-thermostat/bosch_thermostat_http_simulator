@@ -1129,7 +1129,7 @@
       "type": "stringValue",
       "recordable": 0,
       "writeable": 0,
-      "value": "zq/Uz856qvGeGoFD"
+      "value": "-1"
     },
     {
       "id": "/gateway/remote",
@@ -1175,7 +1175,7 @@
       "type": "stringValue",
       "recordable": 0,
       "writeable": 0,
-      "value": "37206609407907746901877"
+      "value": "-1"
     },
     {
       "id": "/gateway/time",
@@ -1861,7 +1861,7 @@
       "type": "stringValue",
       "recordable": 0,
       "writeable": 0,
-      "value": "7133310270-0010003280-110102"
+      "value": "-1"
     },
     {
       "id": "/system/appliance/systemPressure",
@@ -1939,21 +1939,21 @@
       "type": "stringValue",
       "recordable": 0,
       "writeable": 1,
-      "value": "51.184095"
+      "value": "-1"
     },
     {
       "id": "/system/location/localization",
       "type": "stringValue",
       "recordable": 0,
       "writeable": 1,
-      "value": "de"
+      "value": "-1"
     },
     {
       "id": "/system/location/longitude",
       "type": "stringValue",
       "recordable": 0,
       "writeable": 1,
-      "value": "4.1086701"
+      "value": "-1"
     },
     {
       "id": "/system/sensors",

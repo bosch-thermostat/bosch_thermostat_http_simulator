@@ -420,8 +420,8 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "kami",
-            "allowedValues": ["kami"]
+            "value": "-1",
+            "allowedValues": ["-1"]
         },
         {
             "id": "/gateway/instAccess",

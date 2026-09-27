@@ -2193,8 +2193,8 @@
                     "name": "QmVkcm9vbSBsZWZ0",
                     "zone": 1,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A0000058785950B8",
-                    "dlk": "7042D6BFBB81BFDC0679CC5F0077D902",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 76,
                     "battery": "ok",
                     "type": "thermostat_valve"
@@ -2211,8 +2211,8 @@
                     "name": "QmVkcm9vbSByaWdodA==",
                     "zone": 1,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859510D",
-                    "dlk": "E2CFABD92A97FD0CB4A5ACAE2E578E30",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2229,8 +2229,8 @@
                     "name": "R3Vlc3Qgcm9vbS0x",
                     "zone": 2,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A0000058785950DA",
-                    "dlk": "384C33E0CF97B9FD2B937545D1338F64",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2485,14 +2485,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "7042D6BFBB81BFDC0679CC5F0077D902"
+            "value": "-1"
         },
         {
             "id": "/devices/device2/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A0000058785950B8"
+            "value": "-1"
         },
         {
             "id": "/devices/device2/name",
@@ -2680,14 +2680,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "E2CFABD92A97FD0CB4A5ACAE2E578E30"
+            "value": "-1"
         },
         {
             "id": "/devices/device3/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859510D"
+            "value": "-1"
         },
         {
             "id": "/devices/device3/name",
@@ -2875,14 +2875,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "384C33E0CF97B9FD2B937545D1338F64"
+            "value": "-1"
         },
         {
             "id": "/devices/device4/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A0000058785950DA"
+            "value": "-1"
         },
         {
             "id": "/devices/device4/name",

@@ -523,7 +523,7 @@
             "recordable": 0,
             "used": "true",
             "available": "true",
-            "value": "kQSyPvyWUgQAsAHX"
+            "value": "-1"
         },
         {
             "id": "/gateway/installer",
@@ -648,14 +648,14 @@
             "writeable": 0,
             "used": "true",
             "recordable": 0,
-            "value": "tyfC9AK4MTu69PpChiPNy9MY"
+            "value": "-1"
         },
         {
             "id": "/gateway/serialnumber",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "05709597401818737906740"
+            "value": "-1"
         },
         {
             "id": "/gateway/test",
@@ -2046,17 +2046,14 @@
             "type": "stringArray",
             "writeable": 1,
             "recordable": 0,
-            "value": [
-                "38.1064237",
-                "15.6381435"
-            ]
+            "value": "-1"
         },
         {
             "id": "/system/location/localization",
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "de"
+            "value": "-1"
         },
         {
             "id": "/system/sensors",
@@ -2284,8 +2281,8 @@
                     "name": "SW5ncmVzc28=",
                     "zone": 2,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859ED55",
-                    "dlk": "5A8094C7A9D8FAA254CDC42D64AB4635",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2302,8 +2299,8 @@
                     "name": "Q2FtZXJhIGRhIGxldHRv",
                     "zone": 3,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859E9AB",
-                    "dlk": "3EA8C1759908721129DC71D2800D8BC3",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 67,
                     "battery": "ok",
                     "type": "thermostat_valve"
@@ -2320,8 +2317,8 @@
                     "name": "Q3VjaW5hMQ==",
                     "zone": 5,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859F091",
-                    "dlk": "FF74775CBF26BB424EC1DE174832EBF4",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2338,8 +2335,8 @@
                     "name": "Q29ycmlkb2lvMQ==",
                     "zone": 1,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859F088",
-                    "dlk": "A0E5F9C48322C1EA3A40B0EDA0FB17F3",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2356,8 +2353,8 @@
                     "name": "U2VieQ==",
                     "zone": 4,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859EDB2",
-                    "dlk": "16CECEACB5D0A9D2BA9D0A41039765E4",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 58,
                     "battery": "ok",
                     "type": "thermostat_valve"
@@ -2374,8 +2371,8 @@
                     "name": "QmFnbm8gUm9zYQ==",
                     "zone": 8,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859F072",
-                    "dlk": "803352E8B0163A26CAEA39F0A42E0AF0",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2392,8 +2389,8 @@
                     "name": "Q3VjaW5hMg==",
                     "zone": 6,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859F092",
-                    "dlk": "1203E329C6F4A627FFABD9D0979A09CA",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2410,8 +2407,8 @@
                     "name": "U29nZ2lvcm5v",
                     "zone": 7,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859EE5D",
-                    "dlk": "5626325CE72BEE65DE0C8BCC3F7EFC01",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2428,8 +2425,8 @@
                     "name": "U3RhbnphIFJvc2EtMQ==",
                     "zone": 9,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859E99E",
-                    "dlk": "9CBA52E768AC4C53310996565857D9EB",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2446,8 +2443,8 @@
                     "name": "UGFvbG8tMQ==",
                     "zone": 10,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859F095",
-                    "dlk": "11AD7CABD475CED1AA6F80BA2CBFD488",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2464,8 +2461,8 @@
                     "name": "SmVzc2ljYS0x",
                     "zone": 11,
                     "protocol": "homematicip",
-                    "sgtin": "3014F711A00000587859EFF0",
-                    "dlk": "90BBE1B505BC826C499C0DF614733AA0",
+                    "sgtin": "-1",
+                    "dlk": "-1",
                     "signal": 0,
                     "battery": "unknown",
                     "type": "thermostat_valve"
@@ -2720,14 +2717,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "5A8094C7A9D8FAA254CDC42D64AB4635"
+            "value": "-1"
         },
         {
             "id": "/devices/device2/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859ED55"
+            "value": "-1"
         },
         {
             "id": "/devices/device2/name",
@@ -2915,14 +2912,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3EA8C1759908721129DC71D2800D8BC3"
+            "value": "-1"
         },
         {
             "id": "/devices/device3/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859E9AB"
+            "value": "-1"
         },
         {
             "id": "/devices/device3/name",
@@ -3110,14 +3107,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "FF74775CBF26BB424EC1DE174832EBF4"
+            "value": "-1"
         },
         {
             "id": "/devices/device4/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859F091"
+            "value": "-1"
         },
         {
             "id": "/devices/device4/name",
@@ -3305,14 +3302,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "A0E5F9C48322C1EA3A40B0EDA0FB17F3"
+            "value": "-1"
         },
         {
             "id": "/devices/device5/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859F088"
+            "value": "-1"
         },
         {
             "id": "/devices/device5/name",
@@ -3500,14 +3497,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "16CECEACB5D0A9D2BA9D0A41039765E4"
+            "value": "-1"
         },
         {
             "id": "/devices/device6/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859EDB2"
+            "value": "-1"
         },
         {
             "id": "/devices/device6/name",
@@ -3695,14 +3692,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "803352E8B0163A26CAEA39F0A42E0AF0"
+            "value": "-1"
         },
         {
             "id": "/devices/device7/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859F072"
+            "value": "-1"
         },
         {
             "id": "/devices/device7/name",
@@ -3890,14 +3887,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "1203E329C6F4A627FFABD9D0979A09CA"
+            "value": "-1"
         },
         {
             "id": "/devices/device8/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859F092"
+            "value": "-1"
         },
         {
             "id": "/devices/device8/name",
@@ -4085,14 +4082,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "5626325CE72BEE65DE0C8BCC3F7EFC01"
+            "value": "-1"
         },
         {
             "id": "/devices/device9/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859EE5D"
+            "value": "-1"
         },
         {
             "id": "/devices/device9/name",
@@ -4280,14 +4277,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "9CBA52E768AC4C53310996565857D9EB"
+            "value": "-1"
         },
         {
             "id": "/devices/device10/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859E99E"
+            "value": "-1"
         },
         {
             "id": "/devices/device10/name",
@@ -4475,14 +4472,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "11AD7CABD475CED1AA6F80BA2CBFD488"
+            "value": "-1"
         },
         {
             "id": "/devices/device11/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859F095"
+            "value": "-1"
         },
         {
             "id": "/devices/device11/name",
@@ -4670,14 +4667,14 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "90BBE1B505BC826C499C0DF614733AA0"
+            "value": "-1"
         },
         {
             "id": "/devices/device12/homematicip/sgtin",
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "3014F711A00000587859EFF0"
+            "value": "-1"
         },
         {
             "id": "/devices/device12/name",

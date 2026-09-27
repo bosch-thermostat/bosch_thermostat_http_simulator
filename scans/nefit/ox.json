@@ -1861,7 +1861,7 @@
             "type": "stringValue",
             "recordable": 0,
             "writeable": 0,
-            "value": "7369007990-0370360192-501206"
+            "value": "-1"
         },
         {
             "id": "/system/appliance/systemPressure",
@@ -1939,7 +1939,7 @@
             "type": "stringValue",
             "recordable": 0,
             "writeable": 1,
-            "value": "40.412564"
+            "value": "-1"
         },
         {
             "id": "/system/location/localization",
@@ -1953,7 +1953,7 @@
             "type": "stringValue",
             "recordable": 0,
             "writeable": 1,
-            "value": "-3.697469"
+            "value": "-1"
         },
         {
             "id": "/system/sensors",
